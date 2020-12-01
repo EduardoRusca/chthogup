@@ -1,0 +1,149 @@
+### Don't touch!!!
+
+defined_text = {
+	name = GetFirstTitle
+	text = {
+		trigger = {
+			tag = JAP
+			has_government = fascism
+		}
+		localization_key = JAP_EMPRESS_TITLE
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_government = neutrality
+		}
+		localization_key = JAP_EMPRESS_SHOGUN_TITLE
+	}
+	text = {
+		localization_key = DEFAULT_FIRST_TITLE
+	}
+}
+
+defined_text = {
+	name = GetSecondTitle
+	text = {
+		trigger = {
+			tag = JAP
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+			NOT = {
+				has_completed_focus = JAP_modern_shogunate
+			}
+		}
+		localization_key = JAP_PRIME_MINISTER_TITLE
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_government = neutrality
+			has_completed_focus = JAP_modern_shogunate
+		}
+		localization_key = JAP_VICE_COMMANDER_TITLE
+	}
+}
+
+defined_text = {
+	name = GetDualLeaderName
+	text = {
+		trigger = {
+			tag = JAP
+			has_government = fascism
+		}
+		localization_key = JAP_IKUYO_FUKUDA
+	}
+	text = {
+		trigger = {
+			tag = JAP
+			has_government = neutrality
+			has_completed_focus = JAP_showa_restoration
+		}
+		localization_key = JAP_HARU_TAMADA
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_government = neutrality
+			has_completed_focus = JAP_modern_shogunate
+		}
+		localization_key = JAP_HARU_TAMADA
+	}
+	text = {
+		localization_key = DEFAULT_TITLE
+	}
+}
+
+defined_text = {
+    name = GetDualLeaderPortrait
+	text = {
+		trigger = {
+			tag = JAP
+			has_government = fascism
+		}
+		localization_key = GFX_Fukuda
+	}
+    text = {
+        trigger = {
+			tag = JAP
+			has_government = neutrality
+			has_completed_focus = JAP_showa_restoration
+		}
+        localization_key = GFX_Tamada
+	}
+	text = {
+        trigger = {
+			tag = JAP
+			has_government = neutrality
+			has_completed_focus = JAP_modern_shogunate
+		}
+        localization_key = GFX_Tamada
+	}
+	text = {
+		localization_key = "GFX_portrait_bg_blank"
+	}
+}
+
+defined_text = {
+    name = GetDualLeaderDesc
+    
+    text = {
+        trigger = {
+			tag = JAP
+			has_government = fascism
+		}
+        localization_key = "POLITICS_FUKUDA_DESC"
+	}
+	text = {
+        trigger = {
+			tag = JAP
+			has_government = neutrality
+			has_completed_focus = JAP_showa_restoration
+		}
+        localization_key = "POLITICS_TAMADA_DESC"
+	}
+	text = {
+        trigger = {
+			tag = JAP
+			has_government = neutrality
+			has_completed_focus = JAP_modern_shogunate
+		}
+        localization_key = "POLITICS_TAMADA_DESC"
+	}
+}
+
+#defined_text = {
+#    name = GetFirstLeaderDesc
+#   
+#    text = {
+#        trigger = {
+#			original_tag = ENG
+#			ENG = {
+#				has_idea = george_v
+#			}
+#		}
+#	    localization_key = "FIRST_LEADER_DESC_TEST"
+#	}
+#}

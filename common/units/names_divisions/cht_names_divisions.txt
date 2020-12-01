@@ -1,0 +1,31 @@
+﻿CHT_FRD = {
+	name = "Garrison Units"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Fukuda Ryodan"
+
+	ordered = {
+		1 = { "%d Fukuda Ryodan" }
+	}
+}
+
+CHT_HRD = {
+	name = "Garrison Units"
+
+	for_countries = { JAP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Hamada Ryodan"
+
+	ordered = {
+		1 = { "%d Hamada Ryodan" }
+	}
+}
