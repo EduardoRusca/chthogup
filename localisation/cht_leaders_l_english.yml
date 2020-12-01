@@ -1,0 +1,20 @@
+﻿l_english:
+ # GUI Localisation, do not edit!
+ first_leader_title: "[ROOT.GetFirstTitle]"
+ second_leader_title: "[ROOT.GetSecondTitle]"
+ dual_leader_name: "[ROOT.GetDualLeaderName]"
+ DEFAULT_TITLE: "Vacant"
+ DEFAULT_FIRST_TITLE: "Leader"
+ second_leader_tt: "§Y[ROOT.GetDualLeaderName]§!"
+ first_leader_diplo_tt: "§Y[From.GetLeader]§!\n[From.GetFirstTitle] of [From.GetNameDef]"
+ second_leader_diplo_tt: "§Y[From.GetDualLeaderName]§!\n[From.GetSecondTitle] of [From.GetNameDef]"
+ dual_leader_desc_tt: "§g[From.GetDualLeaderDesc]§!"
+ first_leader_desc_tt: "§g[From.GetFirstLeaderDesc]§!"
+ # Nation Specific Localisation
+ JAP_PRIME_MINISTER_TITLE: "Prime Minister"
+ JAP_VICE_COMMANDER_TITLE: "Vice Commander"
+ JAP_EMPRESS_TITLE: "Empress Commander"
+ JAP_EMPRESS_SHOGUN_TITLE: "Empress"
+ JAP_REGENT_TITLE: "Regent"
+ JAP_IKUYO_FUKUDA: "Ikuyo Fukuda"
+ JAP_HARU_TAMADA: "Haru Tamada"

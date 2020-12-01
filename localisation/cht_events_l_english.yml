@@ -1,0 +1,89 @@
+﻿l_english:
+ ######################
+ ### REGULAR EVENTS ###
+ ######################
+
+ #SAUNDERS ULTIMATUM
+ ULTIMATUMCHT_DENIED: "Saunders §Rrejects§! Chi-Ha-Tan ultimatum"
+ sds.1.t: "Chi-Ha-Tan Ultimatum"
+ sds.1.d: "A telegram has arrived this morning at the desk of President Kay. A telegram that reads out an ultimatum to cede the Pacific islands of Guam, Midway, and Wake to Chi-Ha-Tan immediately or be faced with imminent conflict. The telegram provides no concessions whatsoever and notes that it will declare war on Saunders within the next 72 hours if rejected. The end of the telegram is signed Ikuyo Fukuda, Chi-Ha-Tan Prime Minister. \n\nA quick cabinet meeting has been arranged to discuss quickly on the matter at hand. The cabinet quickly splits in to two factions. Vice Commander Naomi sways to accept the offer to prevent an ill prepared war to proceed. She also notes the civilian student pressure if war does push through. Vice Commander Alisa on the other hand pushes to contest their claims with the firm reason of unjustified claims on the area. Alisa also adds that the Philippine Islands can be a staging ground for a strong defense and a push upwards their Western flank."
+ sds.1.a: "Concede the territories for peace"
+ sds.1.b: "Come here to Washington Yourselves!"
+ sds.2.t: "Saunders cedes the Islands"
+ sds.2.d: "A rushed report by a Saunders delegate reaches the Prime Ministerial office and hands the official statement of Saunders' concession to Chi-Ha-Tan unconditionally. Natsuko Hosomi gives off a surprised expression while Ikuyo Fukuda smirks and signs the agreement. \n\nThe guns fall silent for more..."
+ sds.2.a: "Excellent!"
+ sds.3.t: "Saunders defiant"
+ sds.3.d: "A Saunders delegate returns in a statement from Vice Commander Alisa. Prime Minister Fukuda reads the statement. \n\nIt reads a protesting and agressive stance on Chi-Ha-Tan claims and directs a threat of conflict. Ikuyo Fukuda scoffs it off as Natsuko Hosomi stares across on to the window curiously. Fukuda smiles and issues a reply."
+ sds.3.a: "With pleasure"
+ sds.3.b: "Ignore the statement"
+
+ #KODOHA FACTION
+ cht2.1.t: "Haru Tamada Coup"
+ cht2.1.desc: "A group of young officers under Haru Tamada has succeeded in detaining various academy officials, as well as Prime Minister Ikuyo Fukuda. They have occupied Tokyo city and have secured control of the Imperial Palace, announcing their intent to purge the academy of 'corrupt officials' and 'academical threats', reinstating the Empress Commander as the sole ruler of the academy.\n\nTheir actions had an unexpectedly large following in the military, where intended counter-operations were forestalled by mass arrests and deportations of elements loyal to the old advisory. Faced with the sudden and overwhelming nature of events, as well as rebel control of the palace, the Empress Commander has made no move to denounce the rebels.\n\nOrganized academical resistance seems already to crumble, and the rebels are expected at any time to announce the establishment of total Imperial control to all areas of domestic, foreign, and military policy. \n\nFukuda has lost her grip."
+ cht2.1.a: "Nishi-ishin no Haru no Sora - Nishi Heika Banzai!"
+ cht_news.1.t: "Tamada Officer Coup"
+ cht_news.1.desc: "A group of young officers has succeeded in toppling the advisory and reinstating the Empress Commander as the supreme ruler of Chi-Ha-Tan. It appears this was a reaction to perceived threats of wide-spread advisory corruption and adherents to hostile academic threats.\n\nAlready referring to the academy even more consistently in Imperial terms, the officers have announced purges will continue until 'all unsavory elements have been removed from the military and the advisory'. Empress Nishi, herself, has released a brief statement assuming the leadership offered to him by the rebels, and made clear overtures of reconciliation with China and the Western colonial powers in the Pacific."
+ cht_news.1.a: "Banzai!"
+ cht_news.1.b: "Troubling news... They have made no such overtures to us."
+ cht_news.1.c: "Does this guarantee peace in the Pacific?"
+ cht_news.1.d: "A sudden turn of events."
+ cht2.2.t: "Coup Aftermath"
+ cht2.2.desc: "Haru Tamada is received under the provision of the Empress Commander. \n\nTamada enters the palace fields where she meets Nishi and Fukuda with Yuki no Shingun and Kimigayo played subsequently. Tamada states her gratitude to the commander and sternly accepts the hand over of advisory from prime minister to empress. Nishi convenes the ceremony with approval of her new powers and with Tamada as Imperial Counselor. \n\nThe defeated Fukuda sends a solemn message and reminds the academy of the honors and possibilites it can achieve. She retreats the stage. \n\nAfter the ceremony, Fukuda is recalled by Tamada. \n\n'Teach me.'"
+ cht2.2.a: "In the spring of the Nishi Restoration; a thousand years evermore!"
+
+ #TAKASHI HARBOR 
+ ## CREDITS GO TO THE UMC MOD TEAM; WE MAY NOT HAVE ASKED PERMISSION BUT WE INSTATED THIS UNDER THE TERMS OF 'PARODY'; WE WILL RESPECT THE FINAL CHOICE OF THE UMC MODDING TEAM IF EVER.
+ ### PLAY THEIR MOD PACKS. IT'S FUN!
+ cht2.10.t: "Operation AI - Ichi"
+ cht2.10.d: "In order to protect the move into the 'Southern Resource Area' the works on 'Decisive Battle" doctrine had begun very early in 1940 under the auspices of Admiral Haru Tamada, commander of Chi-Ha-Tan's Combined Fleet.\n\nThe attack has several major aims.\n\nFirst, it intends to destroy important Saunders fleet units, thereby preventing the Pacific Fleet from interfering with the Chi-Ha-Tan conquest of the Dutch East Indies and Malaya and to enable our troops to freely conquer Southeast Asia without interference.\n\nSecond, it aims to provide us important time to consolidate our position and increase our naval strength before shipbuilding authorized by the 1940 Vinson-Walsh Act will erase any chance of victory.\n\nThird, to deliver a blow to Saunders's ability to mobilize its forces in the Pacific, battleships are chosen as the main targets, as the most prestige ships of any navy.\nFinally, it is expected that the attack will undermine Saunders morale such that the Kaynian leadership would drop its demands contrary to our interests, and would seek a compromise peace with Chi-Ha-Tan.\n\nThe base on Hawaii will be attacked by more tha 350 aircrafts delivered from the 6 aircraft carriers of the 'Striking Force' group - Akagi, Kaga, Sōryū, Hiryū, Shōkaku, and Zuikaku."
+ cht2.10.a: "Tora Tora Tora!"
+ cht2.10.b: "On second thought... we are not prepared."
+ 
+ cht2.11.t: "Operation AI - Ni"
+ cht2.11.d: "The attack on Takashi Harbor is in full turmoil. Two Saunders battleships and numerous aircrafts were already destroyed. Infrastructure and ground facilities were also highly damaged.\n\nShould we proceed with second attack as planned?"
+ cht2.11.a: "Launch the second attack!"
+ cht2.11.b: "We have done enought damage."
+ 
+ cht2.12.t: "Operation AI - San"
+ cht2.12.d: "Second attack on Takashi Harbor was successful but our own casualties are growing dangerously. The high command now must decide if launching one of the prepared plans wouldn't cost us too much compared to the advantage gained."
+ cht2.12.a: "Launch Tamada's third attack plan!"
+ JAP_pearl_harbor_units_EXPL: "Gain §H12§! special Invasion Divisions in §HHawaii§!, that will start fighting US troops over §HControl§! of the island.\n"
+ cht2.12.b: "Launch Ikeda's third attack plan!"
+ cht2.12.c: "We have won the day."
+
+ JAP_USA_pearl_harbor_I1: "Revenge for Pearl Harbor"
+ JAP_USA_pearl_harbor_I1_desc: ""
+ JAP_USA_pearl_harbor_I2: "Revenge for Pearl Harbor"
+ JAP_USA_pearl_harbor_I2_desc: ""
+ JAP_USA_pearl_harbor_I3: "Revenge for Pearl Harbor"
+ JAP_USA_pearl_harbor_I3_desc: ""
+ JAP_USA_pearl_harbor_fuel_shortage_I: "Supply Shortage in Pacific"
+ JAP_USA_pearl_harbor_fuel_shortage_I_desc: ""
+
+ CHT_destroy_two_early_battleships: "Destroy two §HEarly Battleships§!"
+
+ cht_news.2.t: "Attack on Takashi Harbor"
+ cht_news.2.desc: "On November 7th, an attack had commenced on Pearl Harbor by the Chi-Ha-Tan Airforce and Navy. The attack was unprecedented as a bright sunny day of day-to-day life had just been passing around. Local constituents have taken in to account mysterious planes hovering over sea and right after an attack were baffled at the expense of such actions. \n\nAt least three condemning strike waves have been reported to happen. Only then hours after had a telegram from Chi-Ha-Tan of a statement of war been received at the desk of President Commander Kay."
+ cht_news.2.a: "Mission Accomplished"
+ cht_news.2.b: "They what?!"
+ cht_news.2.c: "Cheers to the Awoken Tiger!"
+ cht_news.2.d: "They have only awoken a sleeping giant."
+ cht_news.2.e: "A Day of Infamy"
+
+ #CHI-HA-TAN JOINS AXIS
+ cht2.3.t: "[JAP.GetName] seeks an/a [GER.GetFactionName] alliance"
+ cht2.3.desc: "[JAP.GetLeader] has sent a request to join our faction. A recommendedation that they would like to backstab Pravda from Siberia and that we would attack them whenever they deem fit. \n\nPreparations are said to be underway for the attack. Are we prepared to do this? Better yet, Should we risk such a thing?"
+ cht2.3.a: "It'll be practical."
+ cht2.3.b: "Aren't they in touch with [ENG.GetLeader]?"
+ cht2.4.t: "[GER.GetName] accepts the request"
+ cht2.4.desc: "A reply to the request has been sent back to us. They have approved of it."
+ cht2.4.a: "Excellent."
+ cht2.5.t: "[GER.GetName] rejects the request"
+ cht2.5.desc: "A reply to the request has been sent back to us. They have denied it."
+ cht2.5.a: "It's their loss."
+ cht_rejected_alliance: "Rejected Alliance" # Erika/Maho bulli
+ cht2.6.t: "[JAP.GetName] seeks a new alliance"
+ cht2.6.desc: "[JAP.GetLeader] has sent a request to create a faction. A recommendedation that they would like to backstab Pravda from Siberia and that we would attack them whenever they deem fit. \n\nPreparations are said to be underway for the attack. Are we prepared to do this? Better yet, Should we risk such a thing?"
+ cht2.6.a: "Accept."
+ cht2.6.b: "Reject."
+ CHT_KURO_AXIS: "Axis" # Generic

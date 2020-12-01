@@ -1,0 +1,22 @@
+###Mix Pics
+## More to come soon
+#  No comments here sadly.
+
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_idea_ikuyo_fukuda"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_ikuyo_fukuda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_haru_tamada"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_haru_tamada_n"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada_n.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tomoyo_ikeda"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_tomoyo_ikeda.dds"
+	}
+}

@@ -1,0 +1,408 @@
+﻿add_namespace = cht2
+
+country_event = {
+	id = cht2.1
+	title = cht2.1.t
+	desc = cht2.1.desc
+	picture = GFX_report_event_japanese_parade
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.1.a
+		set_politics = { ruling_party = neutrality elections_allowed = no }
+		add_timed_idea = { idea = JAP_military_purges days = 90 }
+		hidden_effect = { 
+			news_event = { id = cht_news.1 hours = 3 }
+			country_event = { id = cht2.2 days = 3 } # Leads to temporary transfer of power to Nishi. Either Shizuka or Kinuyo will be perm depending on player's focus choice
+			add_popularity = { ideology = fascism popularity = 0.18 }
+			add_popularity = { ideology = communism popularity = 0.10 }
+			add_popularity = { ideology = democratic popularity = 0.09 }
+			add_popularity = { ideology = neutrality popularity = 0.63 }
+		}
+	}
+}
+
+country_event = {
+	id = cht2.2
+	title = cht2.2.t
+	desc = cht2.2.desc
+	picture = GFX_report_event_japanese_parade
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.2.a
+		create_country_leader = { # Nishi Resotration!!!
+			name = "Kinuyo Nishi"
+			desc = "POLITICS_KINUYO_DESC"
+			picture = "Kinuyo.dds"
+			expire = "1989.1.1"
+			ideology = japanese_idealism4
+			traits = {
+				warrior_code
+				shintoism
+				totsugeki_sanction
+				emperor_nishi
+			}
+		}
+	}
+}
+
+country_event = {
+	id = cht2.3
+	title = cht2.3.t
+	desc = cht2.3.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.3.a
+
+		GER = {
+			add_to_faction = JAP
+		}
+
+		hidden_effect = {
+			JAP = {
+				country_event = { id = cht2.4 days = 1 }
+			}
+		}
+		
+		ai_chance = {
+			base = 10
+		}
+	}
+
+	option = {
+		name = cht2.3.b
+		
+		add_opinion_modifier = { target = JAP modifier = cht_rejected_alliance }
+
+		hidden_effect = {
+			JAP = {
+				country_event = { id = cht2.5 days = 1 }
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = cht2.4
+	title = cht2.4.t
+	desc = cht2.4.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.4.a
+	}
+}
+
+country_event = {
+	id = cht2.5
+	title = cht2.5.t
+	desc = cht2.5.desc
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.5.a
+	}
+}
+
+country_event = {
+	id = cht2.6
+	title = cht2.6.t
+	desc = cht2.6.desc
+	picture = GFX_report_event_second_vienna_award_pact
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.6.a
+
+		GER = {
+			create_faction = CHT_KURO_AXIS
+			add_to_faction = JAP
+		}
+
+		hidden_effect = {
+			JAP = {
+				country_event = { id = cht2.4 days = 1 }
+			}
+		}
+
+		ai_chance = {
+			base = 10
+		}
+	}
+
+	option = {
+		name = cht2.6.b
+
+		add_opinion_modifier = { target = JAP modifier = cht_rejected_alliance }
+
+		hidden_effect = {
+			JAP = {
+				country_event = { id = cht2.5 days = 1 }
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = { # cht2.10-cht2.12 ARE NOT MADE BY ME. THEY ARE OF COURTESY OF THE UMC MODDING TEAM. WE WILL RESPECT THE FINAL CHOICE OF THE UMC MODDING TEAM IF EVER. 
+	id = cht2.10  # PLAY THEIR MOD PACKS, IT'S REALLY FUN!
+	title = cht2.10.t
+	desc = cht2.10.d
+	picture = GFX_report_event_usa_pearl_harbor_airphoto
+
+	is_triggered_only = yes
+		
+	option = {
+		name = cht2.10.a
+		ai_chance = {
+			base = 100
+		}
+			
+		629 = { 
+			damage_building = { type = infrastructure damage = 0.5 }
+			damage_building = { type = air_base damage = 1.5 }
+			damage_building = { type = naval_base damage = 3.5 province = 4180 }
+		}
+			
+		USA = { 
+			add_war_support = 0.05
+				
+			add_manpower = -1300
+			
+			custom_effect_tooltip = CHT_destroy_two_early_battleships
+			hidden_effect = {
+				destroy_ships = {
+					type = ship_hull_heavy_1
+					count = 2
+				}
+			}
+
+			effect_tooltip = {
+				add_ideas = JAP_USA_pearl_harbor_I1
+			}
+		}
+		
+		country_event = cht2.11 
+	}
+
+	option = {
+		name = cht2.10.b
+		ai_chance = {
+			base = 0
+		}
+
+	}
+}
+
+country_event = {
+	id = cht2.11
+	title = cht2.11.t
+	desc = cht2.11.d
+	picture = GFX_report_event_fighters
+
+	is_triggered_only = yes
+		
+	option = {
+		name = cht2.11.a
+		ai_chance = {
+			base = 100
+		}
+			
+		629 = { 
+			damage_building = { type = infrastructure damage = 1.0 }
+			damage_building = { type = air_base damage = 2.5 }
+			damage_building = { type = naval_base damage = 2.5 province = 4180 }
+		}
+			
+		USA = { 
+			add_war_support = 0.05	
+			
+			add_manpower = -1600
+		
+			custom_effect_tooltip = CHT_destroy_two_early_battleships
+			hidden_effect = {
+				destroy_ships = {
+					type = ship_hull_heavy_1
+					count = 2
+				}
+			}
+			
+			effect_tooltip = {
+				swap_ideas = { 
+					remove_idea = JAP_USA_pearl_harbor_I1 
+					add_idea = JAP_USA_pearl_harbor_I2
+				}
+			}
+		}
+			
+		country_event = cht2.12 
+	}
+
+	option = {		
+		name = cht2.11.b
+		ai_chance = {
+			base = 0
+		}
+
+		declare_war_on = {
+			target = USA
+			type = annex_everything
+		}
+			
+		hidden_effect = {
+			USA = {
+				add_ideas = JAP_USA_pearl_harbor_I1
+			}
+			set_country_flag = 1st_wave
+			news_event = { id = cht_news.2 hours = 6 }
+		}
+	}
+}
+
+country_event = {
+	id = cht2.12
+	title = cht2.12.t
+	desc = cht2.12.d
+	picture = GFX_report_event_generic_bombers
+
+	is_triggered_only = yes
+		
+	option = {
+		name = cht2.12.a
+		ai_chance = {
+			base = 5
+		}
+
+		custom_effect_tooltip = JAP_pearl_harbor_units_EXPL
+			
+		declare_war_on = {
+			target = USA
+			type = annex_everything
+		}
+			
+		hidden_effect = {
+			division_template = {
+				name = "Tokushu Shinkō Shidan"				
+				division_names_group = JAP_MAR_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 0 y = 4 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					recon = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+				}	
+				priority = 2
+			}
+
+			load_oob = "PEARL_HARBOR"
+			news_event = { id = cht_news.2 hours = 6 }
+			set_country_flag = 3rd_wave
+		}
+			
+		USA = {
+			add_war_support = 0.05	
+		
+			add_manpower = -3600
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_USA_pearl_harbor_I2
+					add_idea = JAP_USA_pearl_harbor_I3 
+				}
+			}
+			
+			hidden_effect = {
+				add_ideas = JAP_USA_pearl_harbor_I3 
+			}
+		}
+	}
+		
+	option = {
+		name = cht2.12.b
+		ai_chance = {
+			base = 5
+		}
+			
+		629 = { 
+			damage_building = { type = infrastructure damage = 5.0 }
+			damage_building = { type = air_base damage = 5.0 }
+			damage_building = { type = naval_base damage = 5.0 province = 4180 }
+		}
+			
+		declare_war_on = {
+			target = USA
+			type = annex_everything
+		}
+			
+		USA = { 
+			add_war_support = 0.05	
+			
+			add_manpower = -8000
+
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = JAP_USA_pearl_harbor_I2
+					add_idea = JAP_USA_pearl_harbor_I3 
+				}
+			}
+		
+			hidden_effect = {
+				add_ideas = JAP_USA_pearl_harbor_I3 
+			}
+				
+			add_timed_idea = { 
+				idea = JAP_USA_pearl_harbor_fuel_shortage_I 
+				days = 180
+			}
+		}
+		hidden_effect = {
+			news_event = { id = cht_news.2 hours = 6 }
+			set_country_flag = 3rd_wave
+		}
+	}
+
+	option = {		
+		name = cht2.12.c
+		ai_chance = {
+			base = 5
+		}
+
+		declare_war_on = {
+			target = USA
+			type = annex_everything
+		}
+		
+		hidden_effect = {
+			hidden_effect = {
+				USA = {
+					add_ideas = JAP_USA_pearl_harbor_I2
+				}
+			}
+			news_event = { id = cht_news.2 hours = 6 }
+			set_country_flag = 2nd_wave
+		}
+	}
+}

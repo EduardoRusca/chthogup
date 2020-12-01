@@ -1,0 +1,435 @@
+spriteTypes = {	
+	### NEW ICONS ###
+	SpriteType = {
+	name = "GFX_goal_placate_the_extremeists"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_placate_the_extremeists.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_civilian_planning"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_civilian_planning.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_civilian_utilization"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_civilian_utilization.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_dockyard_expansion"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_dockyard_expansion.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_furui_kyougi"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_furui_kyougi.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_academy_highways"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_academy_highways.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_national_routes"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_national_routes.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_revise_the_bushido_code"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_revise_the_bushido_code.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_preserve_the_bushido_code"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_preserve_the_bushido_code.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_alliance_with_kuro"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_alliance_with_kuro.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_occupation_measures"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_occupation_measures.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_declare_war_on_saunders"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_declare_war_on_saunders.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_tora_tora_tora"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_tora_tora_tora.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_national_exacavations"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_national_exacavations.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_imperial_resources"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_imperial_resources.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_valdivostok_treaty"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_valdivostok_treaty.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_chihatan_reformed"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_chihatan_reformed.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_chihatan_renewed"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_chihatan_renewed.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_pearl_harbour"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_pearl_harbour.tga"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_waking_the_tiger"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_waking_the_tiger.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_colonial_development"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_colonial_development.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_colonial_mobilization"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_colonial_mobilization.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_insular_exapnsion"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_insular_exapnsion.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_pacific_assimilation"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_pacific_assimilation.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_claims_on_saunders"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_claims_on_saunders.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_ultimatum_for_pacific_islands"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_ultimatum_for_pacific_islands.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_oceanian_settlement"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_oceanian_settlement.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_peninsular_expansion"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_peninsular_expansion.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_insular_exapnsion"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_insular_exapnsion.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_strategic_engineering"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_strategic_engineering.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_tactical_engineering"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_tactical_engineering.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_man_the_guns"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_man_the_guns.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_reinforcement"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_reinforcement.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_chihatan_ordinance"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_chihatan_ordinance.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_manchukuo_framework"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_manchukuo_framework.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_menkukuo_framework"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_menkukuo_framework.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_korean_framework"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_korean_framework.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_chihatan_expeditionary_army"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_chihatan_expeditionary_army.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_colonial_production_strategy"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_colonial_production_strategy.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_colonial_research"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_colonial_research.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_zaibtasu_expansion"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_zaibtasu_expansion.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_professionalism"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_professionalism.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_the_baron_of_manchuria"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_the_baron_of_manchuria.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_chihatan_armed_force"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_chihatan_armed_force.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_nishi_sensha_shidan"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_nishi_sensha_shidan.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_anti_tank"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_anti_tank.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_anti_air"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_anti_air.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_chihatan_theoretical_division"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_chihatan_theoretical_division.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_arts_department"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_arts_department.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_ikeda_section_3"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_ikeda_section_3.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_espionage_infiltration"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_espionage_infiltration.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_kuromorimine_enigma"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_kuromorimine_enigma.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_chihatan_cryptology"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_chihatan_cryptology.dds"
+	}
+	
+	SpriteType = {
+	name = "GFX_goal_japanese_enigma"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_japanese_enigma.dds"
+	}
+
+	SpriteType = {
+	name = "GFX_goal_philippine_soverignty_question"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_philippine_soverignty_question.dds"
+	}
+
+	### BASE ICONS ###
+
+	SpriteType = {
+	name = "GFX_goal_open_up_the_universities"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/open_up_the_universities.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_nationalize_the_zaibatsus"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/nationalize_the_zaibatsus.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_purge_the_kodoha_faction"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/purge_the_kodoha_faction.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_liaison_conference"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/liaison_conference.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_guide_the_zaibatsus"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/guide_the_zaibatsus.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_greater_east_asian_co_prosperity_sphere"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/greater_east_asian_co_prosperity_sphere.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_sign_tripartite_pact"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/sign_tripartite_pact.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_intervene_in_china"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/intervene_in_china.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_strike_south_doctrine"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_strike_south_doctrine.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_nationalize_war_industry"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/nationalize_war_industry.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_secure_china"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/secure_china.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_alliance_with_siam"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/alliance_with_siam.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_develop_chinese_resources"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/develop_chinese_resources.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_non_aggression_pact_with_the_soviet_union"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/non_aggression_pact_with_the_soviet_union.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_strike_on_the_southern_resource_area"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/strike_on_the_southern_resource_area.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_coal_liquification"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/coal_liquification.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_exploit_the_southern_resource_area"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/exploit_the_southern_resource_area.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_support_the_kodoha_faction"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/support_the_kodoha_faction.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_modern_shogunate"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/modern_shogunate.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_nishi_restoration"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/nishi_restoration.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_prepare_for_war_with_the_soviet_union"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/prepare_for_war_with_the_soviet_union.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_imperial_arsenals"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/imperial_arsenals.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_JAP_join_the_london_naval_treaty"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/JAP_join_the_london_naval_treaty.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_build_up_the_manchurian_army"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/build_up_the_manchurian_army.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_non_aggression_pact_with_china"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/non_aggression_pact_with_china.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_create_a_manchurian_imperial_air_force"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/create_a_manchurian_imperial_air_force.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_preemptive_war"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/preemptive_war.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_national_mobilization_law"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/national_mobilization_law.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_national_defense_state"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/national_defense_state.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_strengthen_the_divine_wind"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/strengthen_the_divine_wind.dds"			
+	}urefile = "gfx/interface/goals/Chi-Ha-Tan/purge_the_militarists.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_the_showa_constitution"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/the_showa_constitution.dds"			
+	}
+}

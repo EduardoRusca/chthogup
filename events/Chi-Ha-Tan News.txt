@@ -1,0 +1,108 @@
+﻿add_namespace = cht_news
+
+news_event = {
+	id = cht_news.1
+	title = cht_news.1.t
+	desc = cht_news.1.desc
+	picture = GFX_news_event_japanese_parade
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = cht_news.1.a
+		trigger = {
+			OR = {
+				original_tag = JAP
+				AND = {
+					original_tag = MAN
+					has_government = fascism
+				}
+			}
+		}
+	}
+	option = {
+		name = cht_news.1.b
+		trigger = {
+			original_tag = SOV
+		}
+	}
+	option = {
+		name = cht_news.1.c
+		trigger = {
+			OR = {
+				original_tag = HOL
+				original_tag = ENG
+				original_tag = USA
+				original_tag = CHI
+				original_tag = AST
+				original_tag = NZL
+				original_tag = RAJ
+			}
+		}
+	}
+	option = {
+		name = cht_news.1.d
+		trigger = {
+			NOT = {
+				original_tag = JAP
+				original_tag = SOV
+				original_tag = HOL
+				original_tag = ENG
+				original_tag = USA
+				original_tag = CHI
+				original_tag = AST
+				original_tag = NZL
+				original_tag = RAJ
+				AND = {
+					original_tag = MAN
+					has_government = fascism
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = cht_news.2
+	title = cht_news.2.t
+	desc = cht_news.2.desc
+	picture = GFX_news_event_usa_japan_at_war
+
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = cht_news.2.a
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = cht_news.2.b
+		trigger = {
+			original_tag = SOV
+		}
+	}
+	option = {
+		name = cht_news.2.c
+		trigger = {
+			OR = {
+				original_tag = GER
+				original_tag = ITA
+			}
+		}
+	}
+	option = {
+		name = cht_news.2.d
+		trigger = {
+			original_tag = ENG
+		}
+	}
+	option = {
+		name = cht_news.2.e
+		trigger = {
+			original_tag = USA
+		}
+	}
+}
