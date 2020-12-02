@@ -1,0 +1,30 @@
+music = {
+	name = "aikoku_koushinkyoku"
+	file = "cht_aikoku.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "charge_ballad"
+	file = "cht_charge.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "hibike_totsugeki_rappa"
+	file = "cht_hibike.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "yuki_no_shingun_ankou"
+	file = "cht_yuki_ankou.ogg"
+	volume = 0.30
+}
+
+music = {
+	name = "yuki_no_shingun_erwin"
+	file = "cht_yuki_erwin.ogg"
+	volume = 0.30
+}
+

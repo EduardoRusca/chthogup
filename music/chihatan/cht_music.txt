@@ -1,0 +1,79 @@
+music_station = "chihatan"
+
+music = {
+	song = "aikoku_koushinkyoku"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "charge_ballad"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "hibike_totsugeki_rappa"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "yuki_no_shingun_ankou"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "yuki_no_shingun_erwin"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_war = no
+		}
+	}
+}
+
+
