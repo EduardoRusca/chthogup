@@ -112,7 +112,8 @@ set_technology = {
 	early_bomber = 1
 	CAS1 = 1
 	
-	trench_warfare = 1
+	mass_assault = 1
+	pocket_defence = 1
 	base_strike = 1
 	fuel_silos = 1
 	synth_oil_experiments = 1
@@ -236,7 +237,7 @@ create_import = {
 
 	###new focuses list
 	complete_national_focus = JAP_placate_the_extremeists
-	complete_national_focus = JAP_civilian_planning
+	unlock_national_focus = JAP_civilian_planning
 	complete_national_focus = JAP_dockyard_expansion
 	complete_national_focus = JAP_academy_highways
 	complete_national_focus = JAP_waking_the_tiger
@@ -287,6 +288,7 @@ create_import = {
 		#infantry and tanks
 		support_weapons = 1
 		improved_light_tank = 1
+		mechanised_infantry = 1
 
 		#artillery
 		interwar_artillery = 1

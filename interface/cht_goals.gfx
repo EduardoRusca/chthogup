@@ -166,11 +166,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-	name = "GFX_goal_chihatan_ordinance"
-	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_chihatan_ordinance.dds"
-	}
-
-	SpriteType = {
 	name = "GFX_goal_manchukuo_framework"
 	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_manchukuo_framework.dds"
 	}
@@ -429,7 +424,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-	name = "GFX_goal_the_showa_constitution"
-	texturefile = "gfx/interface/goals/Chi-Ha-Tan/the_showa_constitution.dds"			
+	name = "GFX_goal_chihatan_ordinance"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/chihatan_ordinance.tga"			
 	}
 }

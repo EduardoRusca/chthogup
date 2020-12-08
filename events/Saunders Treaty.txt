@@ -1,0 +1,136 @@
+﻿add_namespace = sds
+
+country_event = {
+	id = sds.4
+	title = sds.4.t
+	desc = sds.4.desc
+	picture = GFX_report_event_saunders_treaty
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sds.4.a
+		
+		white_peace = { 
+			tag = JAP
+			message = LOS_ANGELES_TREATY
+		}
+
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = sds.5
+				}
+			}
+			JAP = {
+				annex_country = {
+   					target = PHI
+    				transfer_troops = yes
+				}
+				transfer_state = 638
+				transfer_state = 632
+				transfer_state = 631
+				transfer_state = 630
+				transfer_state = 642
+				transfer_state = 727
+				transfer_state = 629
+				transfer_state = 650
+				transfer_state = 463
+			}
+		}
+
+		ai_chance = {
+			factor = 80
+
+			modifier = {
+				add = 240
+				tag = USA
+				has_war_with = GER
+			}
+		}
+	}
+
+	option = {
+		name = sds.4.b
+		
+		JAP = {
+			add_ideas = cht_furious
+		}
+
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = sds.6
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 80
+
+			modifier = {
+				add = 240
+				tag = USA
+				NOT = {
+					has_war_with = GER
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sds.5
+	title = sds.5.t
+	desc = sds.5.desc
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sds.5.a
+		
+		JAP = {
+			annex_country = {
+   				target = PHI
+    			transfer_troops = yes
+			}
+			transfer_state = 638
+			transfer_state = 632
+			transfer_state = 631
+			transfer_state = 630
+			transfer_state = 642
+			transfer_state = 727
+			transfer_state = 629
+			transfer_state = 650
+			transfer_state = 463
+		}
+	}
+}
+
+country_event = {
+	id = sds.6
+	title = sds.6.t
+	desc = sds.6.desc
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sds.6.a
+		
+		if = {
+			limit = {
+				JAP = {
+					NOT = {
+						has_idea = cht_furious
+					}
+				}
+			}
+			add_ideas = cht_furious
+		}
+	}
+}

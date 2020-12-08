@@ -3,17 +3,74 @@
  ### REGULAR EVENTS ###
  ######################
 
+ #PRAVDA ULTIMATUM
+ pvd.1.t: "Ultimatum of Surrender from Chi-Ha-Tan"
+ pvd.1.desc: "A delegate has arrrived in to the capital and has brought about an offer of peace with concession measures of our land in the east. It'll be [SOV.GetLeader]'s choice to accept or decline this offer. Our academy's fate is at stake with this."
+ pvd.1.a: "They fought formidabbly."
+ pvd.1.b: "They backstabbed us! Why else would we?"
+ ULAANBAATOR_TREATY: "Acceptance of the §RUlaanbaator Conference§!"
+ pvd.2.t: "[SOV.GetLeader] concedes"
+ pvd.2.desc: ""
+ pvd.2.a: "Smart idea, Little Tyrant!"
+ pvd.3.t: "[SOV.GetLeader] defiant"
+ pvd.3.desc: ""
+ pvd.3.a: "Aight bet"
+
+ #GLORIANA TREATY
+ glo.1.t: "Treaty Offer in Singapore"
+ glo.1.desc: "A delegate has arrived at the capital and has given us an offer of peace with concessions of our Asian lands. Not much else is entailed. What do we do?"
+ glo.1.a: "Chi-Ha-Tan has found their place in the Sun."
+ glo.1.b: "All is fair in love and war."
+ GLORIANA_TREATY: "Signing of the §YCTreaty of Singapore§!"
+ glo.2.t: "St. Gloriana Accepts"
+ glo.2.desc: ""
+ glo.2.a: "As expected."
+ glo.3.t: "St. Gloriana Refuses"
+ glo.3.desc: ""
+ glo.3.a: "Aight bet"
+
+ #SAUNDERS TREATY
+ sds.4.t: "Treaty Offer in Los Angeles"
+ sds.4.desc: "A delegate has arrived at the capital and has given us an offer of peace with concession of our Pacific lands. That was all as stated. What do we do?"
+ sds.4.a: "They have prooved themselves."
+ sds.4.b: "Come to Washington yourselves!"
+ LOS_ANGELES_TREATY: "Acceptance of the §YLos Angeles Conference§!"
+ sds.5.t: "Saunders accepts"
+ sds.5.desc: ""
+ sds.5.a: "Very well."
+ sds.6.t: "Saunders Rejects"
+ sds.6.desc: ""
+ sds.6.a: "Ah is that so?"
+
+ #TAMADA-FUKUDA DEBACLE
+ army_law.1.t: "Interservice Rivalry - Army"
+ army_law.1.desc: "The issue that has begun ever since the last the competitions and tournaments is on the fate of the academy's doctrine. As of now, in an official report it is considered that our mass assault 'suicide' doctrine is very impractical and unwise. \n\nA motion to resolve this issue has been pressed upon by Ikuyo Fukuda through going against this outdated doctrine and instead, going to more ambush and defense-in-depth style doctrine. It seems to be unthinkable at first by most of the military but as Fukuda elaborates further, more and more are swayed to this new doctrine. Fukuda is set out to test this out by taking sweeping action through China and Southeast Asia. \n\nIn contrast, Haru Tamada insists on the olden doctrine in which tackles with the same suicide charges as of now. Surprisingly, she is now loosing traction of her own power with Fukuda on the rise. The only way Tamada could prove this olden doctrine is through a push northwards in to Siberia opposing Pravda. \n\nIn the end, it is the [GetFirstTitle]'s choice to steer in either direction. There will bo no middleground for compromise and choosing one against another will only make things worse."
+ army_law.1.a: "Let Fukuda prove herself first."
+ army_law.1.b: "Tamada is the way."
+ navy_law.1.t: "Interservice Rivalry - Navy"
+ navy_law.1.desc: "While the army is in heat for its future it is of certain guarantee that the navy has everything covered under Haru Tamada despite her army interventions. The case provided for the navy is on which doctrine to focus on. Naval technology will come after. \n\nThe first case presents a carrier initiative where Tamada weighs in on the power and potential impact of the airforce in naval operations. With plans on even intimidating Saunders as such. \n\nThe second case presents an initiative on the battlefleet and submarine forces. Tamada weighs in on the potential of our navy to match levels of St. Gloriana and Imperial Kuromorimine (back then). The basic plan with that is to merely a show of naval power and doctrinal formation. \n\nThis case has rested on the base strike doctrine and there seems to be no practicalities in switching doctrine. The final choice is on the [GetFirstTitle]."
+ navy_law.1.a: "Focus on the air fleet."
+ navy_law.1.b: "Focus on the surface and subsurface fleet."
+
+ #NISHI SENSHA SHIDAN
+ sensha_shidan.1.t: "the Nishi Sensha Shidan"
+ sensha_shidan.1.desc: "With a new recruitment campaign in swing, let us attract more by instating a special army guard for the [GetFirstTitle] that'll truly show our force and might. The first companies have already formed under their self-title of the 'Nishi Sensha Shidan'. Surely they will strike in combo for our campaigns!"
+ sensha_shidan.1.a: "Deploy them with the best skilled among us."
+ NISHI_ELITE_TANKS_1: "§YWe will be able to deploy 8 elite tank divisions with complete equipment with veteran experience.§! Keep in mind that the more better tanks we have the better the composition!"
+ sensha_shidan.1.b: "Deploy them en masse with special training."
+ NISHI_ELITE_TANKS_2: "We will be able to gain 16 elite tank divisions with some underequipped with seasoned experience.§! Keep in mind that the more better tanks we have the better the composition!"
+
  #SAUNDERS ULTIMATUM
  ULTIMATUMCHT_DENIED: "Saunders §Rrejects§! Chi-Ha-Tan ultimatum"
  sds.1.t: "Chi-Ha-Tan Ultimatum"
- sds.1.d: "A telegram has arrived this morning at the desk of President Kay. A telegram that reads out an ultimatum to cede the Pacific islands of Guam, Midway, and Wake to Chi-Ha-Tan immediately or be faced with imminent conflict. The telegram provides no concessions whatsoever and notes that it will declare war on Saunders within the next 72 hours if rejected. The end of the telegram is signed Ikuyo Fukuda, Chi-Ha-Tan Prime Minister. \n\nA quick cabinet meeting has been arranged to discuss quickly on the matter at hand. The cabinet quickly splits in to two factions. Vice Commander Naomi sways to accept the offer to prevent an ill prepared war to proceed. She also notes the civilian student pressure if war does push through. Vice Commander Alisa on the other hand pushes to contest their claims with the firm reason of unjustified claims on the area. Alisa also adds that the Philippine Islands can be a staging ground for a strong defense and a push upwards their Western flank."
+ sds.1.d: "A telegram has arrived this morning at the desk of President Kay. A telegram that reads out an ultimatum to cede the Pacific islands of Guam, Midway, and Wake to Chi-Ha-Tan immediately or be faced with imminent conflict. The telegram provides no concessions whatsoever and notes that it will declare war on Saunders within the next 72 hours if rejected. The end of the telegram is signed [GetDualLeaderName], Chi-Ha-Tan [GetSecondTitle]. \n\nA quick cabinet meeting has been arranged to discuss quickly on the matter at hand. The cabinet quickly splits in to two factions. Vice Commander Naomi sways to accept the offer to prevent an ill prepared war to proceed. She also notes the civilian student pressure if war does push through. Vice Commander Alisa on the other hand pushes to contest their claims with the firm reason of unjustified claims on the area. Alisa also adds that the Philippine Islands can be a staging ground for a strong defense and a push upwards their Western flank."
  sds.1.a: "Concede the territories for peace"
  sds.1.b: "Come here to Washington Yourselves!"
  sds.2.t: "Saunders cedes the Islands"
- sds.2.d: "A rushed report by a Saunders delegate reaches the Prime Ministerial office and hands the official statement of Saunders' concession to Chi-Ha-Tan unconditionally. Natsuko Hosomi gives off a surprised expression while Ikuyo Fukuda smirks and signs the agreement. \n\nThe guns fall silent for more..."
+ sds.2.d: "A rushed report by a Saunders delegate reaches the [GetSecondTitle]'s office and hands the official statement of Saunders' concession to Chi-Ha-Tan unconditionally. The industrial minister is shocked and the document is signed by the [GetSecondTitle]. \n\nThe guns fall silent for more..."
  sds.2.a: "Excellent!"
  sds.3.t: "Saunders defiant"
- sds.3.d: "A Saunders delegate returns in a statement from Vice Commander Alisa. Prime Minister Fukuda reads the statement. \n\nIt reads a protesting and agressive stance on Chi-Ha-Tan claims and directs a threat of conflict. Ikuyo Fukuda scoffs it off as Natsuko Hosomi stares across on to the window curiously. Fukuda smiles and issues a reply."
+ sds.3.d: "A Saunders delegate returns in a statement from Vice Commander Alisa. The [GetSecondTitle] reads the statement. \n\nIt reads a protesting and agressive stance on Chi-Ha-Tan claims and directs a threat of conflict. [GetDualLeaderName] scoffs it off as the industrial minister stares across on to the window curiously. [GetDualLeaderName] smiles and issues a reply."
  sds.3.a: "With pleasure"
  sds.3.b: "Ignore the statement"
 
@@ -28,7 +85,7 @@
  cht_news.1.c: "Does this guarantee peace in the Pacific?"
  cht_news.1.d: "A sudden turn of events."
  cht2.2.t: "Coup Aftermath"
- cht2.2.desc: "Haru Tamada is received under the provision of the Empress Commander. \n\nTamada enters the palace fields where she meets Nishi and Fukuda with Yuki no Shingun and Kimigayo played subsequently. Tamada states her gratitude to the commander and sternly accepts the hand over of advisory from prime minister to empress. Nishi convenes the ceremony with approval of her new powers and with Tamada as Imperial Counselor. \n\nThe defeated Fukuda sends a solemn message and reminds the academy of the honors and possibilites it can achieve. She retreats the stage. \n\nAfter the ceremony, Fukuda is recalled by Tamada. \n\n'Teach me.'"
+ cht2.2.desc: "Haru Tamada is received under the provision of the Empress Commander. \n\nTamada enters the palace fields where she meets Nishi and Fukuda with Yuki no Shingun and Kimigayo played subsequently. Tamada states her gratitude to the commander and sternly accepts the hand over of advisory from prime minister to empress. Nishi convenes the ceremony with approval of her new powers and with Tamada as Imperial Counselor. \n\nThe defeated Fukuda sends a solemn message and reminds the academy of the honors and possibilites it can achieve. She retreats the stage. \n\nThe only issue left is to either have Nishi or Tsuruki lead on."
  cht2.2.a: "In the spring of the Nishi Restoration; a thousand years evermore!"
 
  #TAKASHI HARBOR 

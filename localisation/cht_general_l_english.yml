@@ -192,6 +192,11 @@
  hibike_totsugeki_rappa: "Hibike Totsugeki Rappa"
  yuki_no_shingun_ankou: "Yuki no Shingun - Ankou Team"
  yuki_no_shingun_erwin: "Yuki no Shingun - Eriwin & Yukari"
+ #TOOLTIPS
+ CHT_FEBRUARY_26TH_FUKUDA: "§gNishi§! has chosen §OFukuda§! in the §LFebruary 26th incdent.§!"
+ CHT_FEBRUARY_26TH_TAMADA: "§gNishi§! has chosen §CTamada§! in the §LFebruary 26th incdent.§!"
+ IKEDA_CHOSEN: "has chosen Ikeda"
+ HOSOMI_CHOSEN: "has chosen Hosomi"
  #REPLACED LOCALISATION
  kawasaki: "Hosomisaki"
  kawasaki_desc: "Natsuko Hosomi and her industrial schemes are a work of brillancy. If we are able to support her, she may be able to to do more."
@@ -200,6 +205,13 @@
  JAP_idemitsu_kosan: "Mayumitsu Terakosan"
  JAP_idemitsu_kosan_desc: "Mayuka Teramoto has provided us with new methods on resource gathering and excavation. With her we can expand our severe lack of resources."
  nissan_desc: "Hamada's motorized company has served to be the best national contender for civilian and military design. A Chi-Ha-Tan Autobahn per se."
+ #CUSTOM COST TRIGGERS
+ command_power_more_than24: "§H25§!£command_power"
+ command_power_more_than24_blocked: "§R25§!£command_power"
+ command_power_more_than24_tooltip: "It costs 25£command_power to select this."
+ command_power_more_than18: "§H18§!£command_power"
+ command_power_more_than18_blocked: "§R18§!£command_power"
+ command_power_more_than18_tooltip: "It costs 18£command_power to select this."
  #MISC
  JAP_toseiha: "\nIf we have sided with the '§HFukuda Faction§!', this focus will have the following §GEffects§!:\n"
  JAP_kodoha: "\nIf we have sided with the '§HTamada Faction§!', this focus will have the following §GEffects§!:\n"

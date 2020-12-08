@@ -1,4 +1,201 @@
 ﻿add_namespace = cht2
+add_namespace = army_law
+add_namespace = navy_law
+add_namespace = sensha_shidan
+
+country_event = {
+	id = army_law.1
+	title = army_law.1.t
+	desc = army_law.1.desc
+	picture = GFX_report_event_army_law
+
+	is_triggered_only = yes
+	
+	option = {
+		name = army_law.1.a
+		
+		add_ideas = ikuyo_fukuda
+
+		set_technology = {
+			trench_warfare = 1
+		}
+
+		hidden_effect = { 
+			set_technology = {
+				mass_assault = 0
+			}
+		}
+		
+		ai_chance = {
+			factor = 10
+
+			modifier = {
+				add = 10
+				tag = JAP
+				has_country_flag = cht_fukuda_chosen
+			}
+		}
+	}
+
+	option = {
+		name = army_law.1.b
+		
+		add_ideas = haru_tamada
+
+		hidden_effect = { 
+			
+		}
+
+		ai_chance = {
+			factor = 1
+
+			modifier = {
+				add = 19
+				tag = JAP
+				has_country_flag = cht_tamada_chosen
+			}
+		}
+	}
+}
+
+country_event = {
+	id = navy_law.1
+	title = navy_law.1.t
+	desc = navy_law.1.desc
+	picture = GFX_report_event_navy_law
+
+	is_triggered_only = yes
+	
+	option = {
+		name = navy_law.1.a
+		
+		set_technology = {
+			carrier_primacy = 1
+		}
+		set_country_flag = cht_carrier
+
+		hidden_effect = { 
+			
+		}
+		
+		ai_chance = {
+			factor = 10
+
+			modifier = {
+				add = 10
+				tag = JAP
+				has_country_flag = cht_fukuda_chosen
+			}
+		}
+	}
+
+	option = {
+		name = navy_law.1.b
+		
+		set_technology = {
+			submarine_operations_bs = 1
+			convoy_escorts_bs = 1
+		}
+		set_country_flag = cht_sub_destroyer
+
+		hidden_effect = { 
+			
+		}
+
+		ai_chance = {
+			factor = 1
+
+			modifier = {
+				add = 19
+				tag = JAP
+				has_country_flag = cht_tamada_chosen
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sensha_shidan.1
+	title = sensha_shidan.1.t
+	desc = sensha_shidan.1.desc
+	picture = GFX_report_event_nishi_sensha_shidan
+
+	is_triggered_only = yes
+	
+	option = {
+		name = sensha_shidan.1.a
+		
+		custom_effect_tooltip = NISHI_ELITE_TANKS_1
+
+		hidden_effect = { 
+			if = {
+				limit = {
+					has_tech = improved_light_tank
+					NOT = {
+						has_tech = basic_medium_tank
+					}
+				}
+				load_oob = "NISHI_SENSHA_SHIDAN_1"
+			}
+			else_if = {
+				limit = {
+					has_tech = basic_light_tank
+					NOT = {
+						has_tech = basic_medium_tank
+					}
+				}
+				load_oob = "NISHI_SENSHA_SHIDAN_2"
+			}
+			else_if = {
+				limit = {
+					has_tech = basic_medium_tank
+				}
+				load_oob = "NISHI_SENSHA_SHIDAN_3"
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = sensha_shidan.1.b
+		
+		custom_effect_tooltip = NISHI_ELITE_TANKS_2
+
+		hidden_effect = {
+			if = {
+				limit = {
+					has_tech = improved_light_tank
+					NOT = {
+						has_tech = basic_medium_tank
+					}
+				}
+				load_oob = "NISHI_SENSHA_SHIDAN_4"
+			}
+			else_if = {
+				limit = {
+					has_tech = basic_light_tank
+					NOT = {
+						has_tech = basic_medium_tank
+					}
+				}
+				load_oob = "NISHI_SENSHA_SHIDAN_5"
+			}
+			else_if = {
+				limit = {
+					has_tech = basic_medium_tank
+				}
+				load_oob = "NISHI_SENSHA_SHIDAN_6"
+			}
+		}
+
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
 
 country_event = {
 	id = cht2.1

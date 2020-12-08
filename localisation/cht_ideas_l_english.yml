@@ -31,7 +31,11 @@
  cht_theoretical_division: "Theoretical Division"
  cht_theoretical_division_desc: "Warfare must not only be focused on the battlefield, but also behind the lines."
  cht_arts_department: "Chi-Ha-Tan Propaganda"
- cht_arts_department_desc: "We musn't be influenced by the outside. Let us show to them we are full with internal and external integrity!"
+ cht_arts_department_desc: "We musn't be influenced by outside poisons. Let us show to them we are full with internal and external integrity!"
+ aircraft_production: "Aircraft Production Focus"
+ aircraft_production_desc: "Our airforce is still lacking. We shall do more to make it better in terms of quality and quantity!"
+ cht_furious: "Chi-Ha-Tan furious!"
+ cht_furious_desc: "With Pravda rejecting their chance of peace, we shall show them hell by attacking day and night with no shed of mercy." # Hidden Idea
  #ADVISORS
  ikuyo_fukuda: "Ikuyo Fukuda"
  ikuyo_fukuda_desc: "An advocate for the Nanshin-ron Doctrine. Ever since a meeting with the Ooarai sports detachment, a thought on reform on the tactics of the academy has come to question. Her efforts are starting to be recognized but will this be turned down back to the days of olden doctrine?"

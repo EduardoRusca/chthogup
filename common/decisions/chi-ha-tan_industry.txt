@@ -1,0 +1,397 @@
+chihatan_industry = {
+	fate_of_the_zaibatsu = {
+
+		icon = GFX_decision_generic_construction
+		days_mission_timeout = 168
+		is_good = no
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+			has_completed_focus = JAP_guide_the_zaibatsus
+		}
+		
+		fire_only_once = yes
+
+		visible = {
+			
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {
+			custom_effect_tooltip = "IKEDA_VICTORY"
+			set_country_flag = cht_ikeda_chosen
+            set_country_flag = cht_panzer_loop
+		}
+		
+		complete_effect  = {
+			custom_effect_tooltip = "HOSOMI_VICTORY"
+			set_country_flag = cht_hosomi_chosen
+            set_country_flag = cht_panzer_loop
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 4000
+
+            modifier = {
+                add = -3920
+                tag = JAP
+                is_historical_focus_on = no
+            }
+		}
+	}
+    academy_bonds = {
+
+		icon = GFX_decision_hol_attract_foreign_investors
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_war = yes
+		}
+
+        cost = 50
+		
+		fire_only_once = no
+        days_re_enable = 30
+        days_remove = 30
+
+		visible = {
+			has_war = yes
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+		
+		modifier = {
+            consumer_goods_factor = -0.075
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    purchase_local_arms = {
+
+		icon = GFX_decision_generic_industry
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_war = yes
+		}
+
+        cost = 65
+		
+		fire_only_once = no
+        days_re_enable = 30
+        days_remove = 30
+
+		visible = {
+			has_war = yes
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            random_list = {
+                50 = {
+                    add_equipment_to_stockpile = {
+				        type = infantry_equipment_1 
+			        	producer = JAP
+			        	amount = 2500
+                    }
+                }
+                25 = {
+                    add_equipment_to_stockpile = {
+				        type = infantry_equipment_1 
+			        	producer = SOV
+			        	amount = 2000
+                    }
+                }
+                15 = {
+                    add_equipment_to_stockpile = {
+				        type = infantry_equipment_1 
+			        	producer = USA
+			        	amount = 1750
+                    }
+                }
+                10 = {
+                    add_equipment_to_stockpile = {
+				        type = infantry_equipment_1 
+			        	producer = ENG
+			        	amount = 1500
+                    }
+                }
+            }
+        }
+		
+		modifier = {
+            consumer_goods_factor = 0.05
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    purchase_big_guns = {
+
+		icon = GFX_decision_ger_military_buildup
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_war = yes
+		}
+
+        cost = 65
+		
+		fire_only_once = no
+        days_re_enable = 30
+        days_remove = 30
+
+		visible = {
+		    has_war = yes
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            random_list = {
+                50 = {
+                    add_equipment_to_stockpile = {
+				        type = artillery_equipment_1 
+			        	producer = JAP
+			        	amount = 2000
+                    }
+                }
+                25 = {
+                    add_equipment_to_stockpile = {
+				        type = artillery_equipment_1 
+			        	producer = SOV
+			        	amount = 1750
+                    }
+                }
+                15 = {
+                    add_equipment_to_stockpile = {
+				        type = artillery_equipment_1 
+			        	producer = USA
+			        	amount = 1500
+                    }
+                }
+                10 = {
+                    add_equipment_to_stockpile = {
+				        type = artillery_equipment_1 
+			        	producer = ENG
+			        	amount = 1000
+                    }
+                }
+            }
+        }
+		
+		modifier = {
+            consumer_goods_factor = 0.075
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    purchase_anti_air = {
+
+		icon = GFX_decision_ger_military_buildup
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            has_war = yes
+            JAP = {
+                has_tech = interwar_antiair
+            }
+            SOV = {
+                has_tech = interwar_antiair
+            }
+            USA = {
+                has_tech = interwar_antiair
+            }
+            ENG = {
+                has_tech = interwar_antiair
+            }
+		}
+
+        cost = 65
+		
+		fire_only_once = no
+        days_re_enable = 30
+        days_remove = 30
+
+		visible = {
+			has_war = yes
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            random_list = {
+                50 = {
+                    add_equipment_to_stockpile = {
+				        type = anti_air_equipment_1 
+			        	producer = JAP
+			        	amount = 2000
+                    }
+                }
+                25 = {
+                    add_equipment_to_stockpile = {
+				        type = anti_air_equipment_1 
+			        	producer = SOV
+			        	amount = 1750
+                    }
+                }
+                15 = {
+                    add_equipment_to_stockpile = {
+				        type = anti_air_equipment_1 
+			        	producer = USA
+			        	amount = 1500
+                    }
+                }
+                10 = {
+                    add_equipment_to_stockpile = {
+				        type = anti_air_equipment_1 
+			        	producer = ENG
+			        	amount = 1000
+                    }
+                }
+            }
+        }
+		
+		modifier = {
+            consumer_goods_factor = 0.075
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+    kuromorimine_panzer_deal = {
+
+		icon = GFX_decision_generic_tank
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            date > 1940.2.14
+		}
+
+        cost = 65
+		
+		fire_only_once = no
+        days_re_enable = 15
+        
+
+		visible = {
+			OR = {
+                has_country_flag = cht_ikeda_chosen
+                has_country_flag = cht_hosomi_chosen
+            }
+            has_country_flag = cht_panzer_loop
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            random_list = {
+                80 = {
+                    if = {
+                        limit = {
+                            GER = {
+                                has_tech = basic_medium_tank
+                            }
+                        }
+                        create_production_license = {
+                            target = GER
+                            equipment = {
+                                type = medium_tank_equipment_1
+                            }
+                            cost_factor = 0
+                        }
+                    }
+                    if = {
+                        limit = {
+                            GER = {
+                                has_tech = improved_medium_tank
+                            }
+                        }
+                        GER = {
+                            create_production_license = {
+                                target = JAP
+                                equipment = {
+                                    type = medium_tank_equipment_2
+                                }
+                                cost_factor = 0
+                            }
+                        }
+                    }
+                    clr_country_flag = cht_panzer_loop
+                }
+                20 = {
+                    custom_effect_tooltip = "KURO_LICENSE_REJECTED"
+                    set_country_flag = cht_panzer_loop
+                }
+            }
+        }
+		
+		modifier = {
+            consumer_goods_factor = 0.075
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 160
+		}
+	}
+    fighter_production = {
+
+		icon = GFX_decision_generic_air
+		
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+		
+		available = {
+            
+		}
+
+        cost = 75
+		
+		fire_only_once = yes
+
+		visible = {
+			has_war = yes
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+        complete_effect = {
+            add_ideas = aircraft_production
+        }
+		
+		modifier = {
+            consumer_goods_factor = 0.1
+        }
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {
+			factor = 40
+		}
+	}
+}

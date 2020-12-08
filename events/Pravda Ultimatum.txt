@@ -1,0 +1,224 @@
+﻿add_namespace = pvd
+
+country_event = {
+	id = pvd.1
+	title = pvd.1.t
+	desc = pvd.1.desc
+	picture = GFX_report_event_pravda_ultimatum
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = pvd.1.a
+		
+		white_peace = {
+			tag = JAP
+			message = ULAANBAATOR_TREATY
+		}
+
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = pvd.2
+				}
+			}
+			JAP = {
+				transfer_state = 655
+			}
+			MAN = {
+				transfer_state = 408
+				transfer_state = 409
+				transfer_state = 560
+				transfer_state = 657
+				transfer_state = 561
+				transfer_state = 563
+				transfer_state = 564
+				transfer_state = 566
+			}
+			if = {
+				limit = {
+					MEN = {
+						exists = yes
+					}
+				}
+				MEN = {
+					transfer_state = 330
+					transfer_state = 329
+				}
+				else = {
+					JAP = {
+						transfer_state = 330
+						transfer_state = 329
+					}
+				}
+			}
+			if = {
+				limit = {
+					MAN = {
+						exists = yes
+					}
+				}
+				MAN = {
+					transfer_state = 408
+					transfer_state = 409
+					transfer_state = 560
+					transfer_state = 657
+					transfer_state = 561
+					transfer_state = 563
+					transfer_state = 564
+					transfer_state = 566
+				}
+				else = {
+					JAP = {
+						transfer_state = 408
+						transfer_state = 409
+						transfer_state = 560
+						transfer_state = 657
+						transfer_state = 561
+						transfer_state = 563
+						transfer_state = 564
+						transfer_state = 566
+					}
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 80
+
+			modifier = {
+				add = 240
+				tag = SOV
+				has_war_with = GER
+			}
+		}
+	}
+
+	option = {
+		name = pvd.1.b
+		
+		JAP = {
+			add_ideas = cht_furious
+		}
+
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = pvd.3
+				}
+			}
+		}
+
+		ai_chance = {	
+			factor = 80
+
+			modifier = {
+				add = 240
+				tag = SOV
+				NOT = {
+					has_war_with = GER
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pvd.2
+	title = pvd.2.t
+	desc = pvd.2.desc
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = pvd.2.a
+		
+		JAP = {
+			transfer_state = 655
+		}
+		MAN = {
+			transfer_state = 408
+			transfer_state = 409
+			transfer_state = 560
+			transfer_state = 657
+			transfer_state = 561
+			transfer_state = 563
+			transfer_state = 564
+			transfer_state = 566
+		}
+		if = {
+			limit = {
+				MEN = {
+					exists = yes
+				}
+			}
+			MEN = {
+				transfer_state = 330
+				transfer_state = 329
+			}
+			else = {
+				JAP = {
+					transfer_state = 330
+					transfer_state = 329
+				}
+			}
+		}
+		if = {
+			limit = {
+				MAN = {
+					exists = yes
+				}
+			}
+			MAN = {
+				transfer_state = 408
+				transfer_state = 409
+				transfer_state = 560
+				transfer_state = 657
+				transfer_state = 561
+				transfer_state = 563
+				transfer_state = 564
+				transfer_state = 566
+			}
+			else = {
+				JAP = {
+					transfer_state = 408
+					transfer_state = 409
+					transfer_state = 560
+					transfer_state = 657
+					transfer_state = 561
+					transfer_state = 563
+					transfer_state = 564
+					transfer_state = 566
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pvd.3
+	title = pvd.3.t
+	desc = pvd.3.desc
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = pvd.3.a
+		
+		if = {
+			limit = {
+				JAP = {
+					NOT = {
+						has_idea = cht_furious
+					}
+				}
+			}
+			add_ideas = cht_furious
+		}
+	}
+}

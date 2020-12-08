@@ -1,4 +1,43 @@
 ideas = {
+	hidden_ideas = {
+		cht_furious = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			cancel = {
+				NOT = {
+					has_war_with = SOV
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chi_army_corruption3 # No need for pictures
+
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.15
+			}
+		}
+	}
+
 	country = {
 		cht_extremists = {
 			allowed = {
@@ -231,7 +270,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = mex_revolutionary_army
+			picture = MEX_politicised_army
 
 			modifier = {
 				training_time_army_factor = -0.05
@@ -253,7 +292,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = mex_politicised_army
+			picture = MEX_politicised_army
 
 			modifier = {
 				training_time_army_factor = -0.1
@@ -277,7 +316,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = mex_politicised_army_2
+			picture = MEX_politicised_army_2
 
 			modifier = {
 				training_time_army_factor = -0.15
@@ -496,6 +535,34 @@ ideas = {
 				navy_max_range_factor = -0.25
 				naval_retreat_chance = -0.1
 				naval_retreat_speed = -0.25
+			}
+		}
+
+		aircraft_production = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+			
+			equipment_bonus = {
+				fighter_equipment  = {
+					air_range = 0.1
+					air_attack = 0.05
+					build_cost_ic = -0.12 instant = yes
+				}
+				cv_fighter_equipment = {
+					air_range = 0.1
+					air_attack = 0.05
+					build_cost_ic = -0.12 instant = yes
+   				}
 			}
 		}
 	}

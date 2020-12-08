@@ -969,7 +969,10 @@
 		}
 
 		available = {
-
+			custom_trigger_tooltip = {
+				tooltip = CHT_FEBRUARY_26TH_FUKUDA
+				has_country_flag = cht_fukuda_chosen
+			}
 		}
 
 		bypass = {
@@ -984,6 +987,16 @@
 		completion_reward = {
 			add_political_power = 100
 			add_stability = 0.1
+			create_field_marshal = {
+				name = "Ikuyo Fukuda"
+				picture = "Fukuda.dds"
+				traits = { defensive_doctrine panzer_leader trait_cautious }
+				skill = 5
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 2
+			}
 		}
 	}
 
@@ -1070,7 +1083,7 @@
 				name = "Rin Matsukaze"
 				picture = "Matsukaze.dds"
 				traits = { infantry_leader }
-				skill = 4
+				skill = 5
 				attack_skill = 2
 				defense_skill = 3
 				planning_skill = 2
@@ -1387,6 +1400,12 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_strike_south_doctrine
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
 			add_tech_bonus = {
 				name = JAP_strike_south_doctrine
 				bonus = 1.0
@@ -2027,11 +2046,14 @@
 		}
 
 		available = {
-
+			
 		}
 
 		bypass = {
-
+			custom_trigger_tooltip = {
+				tooltip = IKEDA_CHOSEN
+				has_country_flag = cht_ikeda_chosen
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2157,7 +2179,10 @@
 		}
 
 		bypass = {
-
+			custom_trigger_tooltip = {
+				tooltip = IKEDA_CHOSEN
+				has_country_flag = cht_ikeda_chosen
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2192,9 +2217,34 @@
 				}
 				set_state_flag = JAP_nationalize_war_industry_IC
 			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					not = {
+						OR = {
+							state = 646
+							state = 645
+							state = 555
+						}
+					}					
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = JAP_nationalize_war_industry_IC
+			}
 			add_timed_idea {
 				idea = cht_civilian_planning
-				days = 90
+				days = 120
 			}
 		}
 	}
@@ -2371,7 +2421,10 @@
 		}
 
 		bypass = {
-
+			custom_trigger_tooltip = {
+				tooltip = IKEDA_CHOSEN
+				has_country_flag = cht_ikeda_chosen
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2437,7 +2490,10 @@
 		}
 
 		bypass = {
-
+			custom_trigger_tooltip = {
+				tooltip = IKEDA_CHOSEN
+				has_country_flag = cht_ikeda_chosen
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2486,10 +2542,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = JAP_nationalize_war_industry_AF
@@ -2511,10 +2567,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = JAP_nationalize_war_industry_IC
@@ -2722,6 +2778,14 @@
 					instant_build = yes
 				}
 			}
+			533 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
 			add_tech_bonus = {
 				name = JAP_coal_liquification
 				bonus = 1.0
@@ -2830,7 +2894,10 @@
 		}
 
 		bypass = {
-
+			custom_trigger_tooltip = {
+				tooltip = HOSOMI_CHOSEN
+				has_country_flag = cht_hosomi_chosen
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -2881,10 +2948,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = JAP_imperial_arsenals1
@@ -2906,10 +2973,10 @@
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = JAP_imperial_arsenals2
@@ -3118,7 +3185,10 @@
 		}
 
 		available = {
-
+			custom_trigger_tooltip = {
+				tooltip = CHT_FEBRUARY_26TH_TAMADA
+				has_country_flag = cht_tamada_chosen
+			}
 		}
 
 		bypass = {
@@ -3160,7 +3230,10 @@
 		}
 
 		bypass = {
-
+			custom_trigger_tooltip = {
+				tooltip = HOSOMI_CHOSEN
+				has_country_flag = cht_hosomi_chosen
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -3284,7 +3357,10 @@
 		}
 
 		bypass = {
-
+			custom_trigger_tooltip = {
+				tooltip = HOSOMI_CHOSEN
+				has_country_flag = cht_hosomi_chosen
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -3294,6 +3370,31 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					not = {
+						OR = {
+							state = 646
+							state = 645
+							state = 555
+						}
+					}					
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = JAP_nationalize_war_industry_IC
+			}
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -3513,7 +3614,7 @@
 				name = "Rin Matsukaze"
 				picture = "Matsukaze.dds"
 				traits = { infantry_leader }
-				skill = 4
+				skill = 5
 				attack_skill = 2
 				defense_skill = 3
 				planning_skill = 2
@@ -3572,7 +3673,7 @@
 				name = "Rin Matsukaze"
 				picture = "Matsukaze.dds"
 				traits = { infantry_leader }
-				skill = 4
+				skill = 5
 				attack_skill = 2
 				defense_skill = 3
 				planning_skill = 2
@@ -3712,7 +3813,7 @@
 			add_tech_bonus = {
 				name = JAP_furui_kyougi
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = land_doctrine
 			}
 			add_tech_bonus = {
@@ -6937,12 +7038,12 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_research_slot = 2
+			add_research_slot = 1
 			set_technology = { tech_logistics_company = 1 }
 			add_tech_bonus = {
 				name = JAP_colonial_research
 				bonus = 1.0
-				uses = 5
+				uses = 2
 				category = synth_resources	
 			}
 		}
@@ -6950,7 +7051,7 @@
 
 	focus = {
 		id = JAP_chihatan_ordinance
-		icon = GFX_goal_the_showa_constitution
+		icon = GFX_goal_generic_position_armies
 		prerequisite = {
 			focus = JAP_colonial_mobilization
 		}
@@ -8082,41 +8183,8 @@
 				uses = 2
 				category = land_doctrine
 			}
-			if = {
-				limit = {
-					has_completed_focus = JAP_purge_the_kodoha_faction
-				}
-
-				add_ideas = ikuyo_fukuda
-			}
-			
-			if = {
-				limit = {
-					has_completed_focus = JAP_support_the_kodoha_faction
-				}
-
-				add_ideas = haru_tamada
-			}
-			
-			if = {
-				limit = {
-					NOT = {
-						has_completed_focus = JAP_purge_the_kodoha_faction
-						has_completed_focus = JAP_support_the_kodoha_faction
-					}
-				}
-
-				custom_effect_tooltip = JAP_toseiha
-
-				effect_tooltip = {
-					add_ideas = ikuyo_fukuda
-				}
-				
-				custom_effect_tooltip = JAP_kodoha
-				
-				effect_tooltip = {
-					add_ideas = haru_tamada
-				}
+			country_event = { 
+				id = army_law.1
 			}
 		}
 	}
@@ -8287,7 +8355,7 @@
 		}
 
 		available = {
-
+			has_tech = mechanised_infantry
 		}
 
 		bypass = {
@@ -8350,6 +8418,9 @@
 					producer = JAP
 					amount = 1250
 				}
+			}
+			country_event = {
+				id = sensha_shidan.1
 			}
 			add_tech_bonus = {
 				name = JAP_armored_divisions
@@ -8561,7 +8632,7 @@
 	focus = {
 		id = JAP_fighter_modernization
 		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = JAP_new_naval_estimates }
+		prerequisite = { focus = JAP_army_expansion_law }
 		x = -5
 		y = 3
 		relative_position_id = JAP_army_expansion_law
@@ -8932,6 +9003,9 @@
 			}
 			else = {
 				navy_experience = 50
+			}
+			country_event = { 
+				id = navy_law.1
 			}
 			random_owned_controlled_state = {
 				limit = {

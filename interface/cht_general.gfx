@@ -2,7 +2,9 @@
 ## More to come soon
 #  No comments here sadly.
 
-spriteTypes = {	
+spriteTypes = {
+
+	#CHIEFS
 	spriteType = {
 		name = "GFX_idea_ikuyo_fukuda"
 		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_ikuyo_fukuda.dds"
@@ -18,5 +20,55 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_tomoyo_ikeda"
 		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_tomoyo_ikeda.dds"
+	}
+
+	#EVENTS
+	spriteType = {
+		name = "GFX_report_event_army_law"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_army_law.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_navy_law"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_navy_law.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_nishi_sensha_shidan"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_nishi_sensha_shidan.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_cht_treaty_sign"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_cht_treaty_sign.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_saunders_treaty"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_saunders_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_gloriana_treaty"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_gloriana_treaty.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_pravda_ultimatum"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_pravda_ultimatum.dds"
+	}
+
+	#DECISIONS
+	spriteType = {
+		name = "GFX_category_chihatan_operations"
+		texturefile = "gfx/interface/decisions/Chi-Ha-Tan/GFX_chihatan_operations.dds"
+	}
+
+	#TANKS
+	SpriteType = {
+		name = "GFX_JAP_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/Chi-Ha-Tan/JAP_imp_light_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/Chi-Ha-Tan/JAP_basic_main_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_amphibious_tank_medium"
+		texturefile = "gfx/interface/technologies/Chi-Ha-Tan/jap_amphibious_tank_123.dds"
 	}
 }

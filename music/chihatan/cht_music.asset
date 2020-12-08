@@ -7,13 +7,13 @@ music = {
 music = {
 	name = "charge_ballad"
 	file = "cht_charge.ogg"
-	volume = 0.30
+	volume = 0.99
 }
 
 music = {
 	name = "hibike_totsugeki_rappa"
 	file = "cht_hibike.ogg"
-	volume = 0.30
+	volume = 0.99
 }
 
 music = {
