@@ -7051,7 +7051,7 @@
 
 	focus = {
 		id = JAP_chihatan_ordinance
-		icon = GFX_goal_generic_position_armies
+		icon = GFX_goal_chihatan_ordinance
 		prerequisite = {
 			focus = JAP_colonial_mobilization
 		}

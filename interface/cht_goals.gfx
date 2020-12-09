@@ -419,8 +419,7 @@ spriteTypes = {
 
 	SpriteType = {
 	name = "GFX_goal_strengthen_the_divine_wind"
-	texturefile = "gfx/interface/goals/Chi-Ha-Tan/strengthen_the_divine_wind.dds"			
-	}urefile = "gfx/interface/goals/Chi-Ha-Tan/purge_the_militarists.dds"			
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/strengthen_the_divine_wind.dds"		
 	}
 
 	SpriteType = {
