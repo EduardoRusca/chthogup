@@ -567,14 +567,284 @@ ideas = {
 		}
 	}
 
-	army_chief = {
-		ikuyo_fukuda = {
+	political_advisor = {
+		natsuko_hosomi_p = {
+			picture = natsuko_hosomi
+			
+			available = {
+				if = {
+					limit = {
+						has_DLC = "Waking the Tiger"
+					}
+					has_completed_focus = JAP_the_unthinkable_option
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+
+			allowed = {
+				original_tag = "JAP"
+			}
+			
+			traits = { communist_revolutionary }
+
+			do_effect = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
+			
+		ritsuko_hamada_p = {
+			picture = ritsuko_hamada
+			
+			available = {
+				if = {
+					limit = {
+						has_DLC = "Waking the Tiger"
+					}
+					has_completed_focus = JAP_strengthen_civilian_government
+				}
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+			allowed = {
+				original_tag = "JAP"
+			}
+			
+			traits = { democratic_reformer }
+
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		ikuyo_fukuda_p = {
+			picture = ikuyo_fukuda
+			
+			allowed = {
+				original_tag = "JAP"
+			}
+			
+			available = {
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+			}
+			
+			traits = { fascist_demagogue }
+
+			do_effect = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+
+		haru_tamada_p = {
+			picture = haru_tamada
+			
 			allowed = {
 				original_tag = JAP
 			}
 			
+			traits = { silent_workhorse }
+		}
+
+		shizuka_tsuruki = {
+			picture = shizuka_tsuruki
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+			traits = { princess_of_terror }
+
+			ai_will_do = {
+				factor = 0.3
+			}
+		}
+
+		yukiko_nagura_p = {
+			picture = yukiko_nagura
+			
+			allowed = {
+				original_tag = JAP
+			}
+			
+			traits = { compassionate_gentleman }
+		}
+
+		tomoyo_ikeda_p = {
+			picture = tomoyo_ikeda
+
+			allowed = {
+				original_tag = JAP
+			}
+
+			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 3
+			}
+		}
+
+		mayuka_teramoto_p = {
+			picture = mayuka_teramoto
+			
+			allowed = { 
+				has_dlc = "La Resistance"
+				original_tag = JAP
+			}
 			available = {
-				has_completed_focus = JAP_army_expansion_law
+				has_intelligence_agency = yes
+			}
+			traits = { illusive_lady }
+
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_intelligence_agency = no
+					factor = 0
+				}
+			}
+		}
+	}
+
+	theorist = {
+		ikuyo_fukuda_t = {
+			ledger = army
+			cost = 200
+
+			allowed = {
+				original_tag = JAP
+			}
+
+			available = {
+				has_completed_focus = JAP_purge_the_kodoha_faction
+			}
+
+			research_bonus = {
+				cat_grand_battle_plan = 0.15
+			}
+			
+			traits = { grand_battle_plan_expert }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		haru_tamada_t = {
+			ledger = army
+			cost = 200
+
+			allowed = {
+				original_tag = JAP
+			}
+
+			available = {
+				has_completed_focus = JAP_support_the_kodoha_faction
+			}
+
+			research_bonus = {
+				cat_mass_assault = 0.15
+			}
+			
+			traits = { mass_assault_expert }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		akemi_kubota_t = {
+			ledger = navy
+			allowed = {
+				original_tag = JAP
+			}
+			
+			research_bonus = {
+				cat_base_strike = 0.15
+			}
+
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_aviation_pioneer naval_theorist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		mayuka_teramoto_t = {
+			ledger = air
+			allowed = {
+				original_tag = JAP
+			}
+
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+
+			research_bonus = {
+				cat_operational_integrity = 0.15
+			}
+			
+			traits = { air_warfare_theorist assault_avaition }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		tomoyo_ikeda_t = {
+			ledger = army
+			
+			allowed = {
+				original_tag = JAP
+			}
+
+			research_bonus = {
+				nuclear = 0.15
+			}
+
+			research_bonus = {
+				rocketry = 0.15
+			}
+			
+			traits = { nuclear_scientist rocket_scientist }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	army_chief = {
+		ikuyo_fukuda = {
+			cost = 200
+
+			allowed = {
+				original_tag = JAP
 			}
 			
 			traits = { cht_reformer }
@@ -585,12 +855,10 @@ ideas = {
 		}
 		
 		haru_tamada = {
+			cost = 200
+
 			allowed = {
 				original_tag = JAP
-			}
-
-			available = {
-				
 			}
 			
 			traits = { cht_old_school }
@@ -602,16 +870,28 @@ ideas = {
 	}
 	
 	navy_chief = {
-		haru_tamada_n = {
+		katsumi_nishihara = {
+			cost = 200
+			
 			allowed = {
 				original_tag = JAP
 			}
+			
+			traits = { cht_carrier_proponent }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
 
-			available = {
-				
+		yukiko_nagura = {
+			cost = 200
+
+			allowed = {
+				original_tag = JAP
 			}
 			
-			traits = { cht_naval_master }
+			traits = { cht_battleship_proponent }
 			
 			ai_will_do = {
 				factor = 1
@@ -624,12 +904,66 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
-
-			available = {
-				
-			}
 			
 			traits = { cht_baroness_ikeda }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+		natsuko_hosomi = {
+			ledger = army
+
+			allowed = {
+				original_tag = JAP
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		ritsuko_hamada = {
+			ledger = army
+
+			allowed = {
+				original_tag = JAP
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		mayuka_teramoto = {
+			ledger = air
+
+			allowed = {
+				original_tag = JAP
+			}
+			
+			traits = { air_tactical_bombing_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		akemi_kubota = {
+			ledger = navy
+
+			allowed = {
+				original_tag = JAP
+			}
+			
+			traits = { navy_naval_air_defense_2 }
 			
 			ai_will_do = {
 				factor = 1

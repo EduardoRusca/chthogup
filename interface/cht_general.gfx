@@ -4,9 +4,13 @@
 
 spriteTypes = {
 
-	#CHIEFS
+	#CoS
 	spriteType = {
 		name = "GFX_idea_ikuyo_fukuda"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_ikuyo_fukuda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ikuyo_fukuda_t"
 		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_ikuyo_fukuda.dds"
 	}
 	spriteType = {
@@ -14,12 +18,70 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_haru_tamada_n"
-		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada_n.dds"
+		name = "GFX_idea_haru_tamada_t"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_haru_tamada.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_katsumi_nishihara"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_katsumi_nishihara.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_yukiko_nagura"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_yukiko_nagura.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_tomoyo_ikeda"
 		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_tomoyo_ikeda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tomoyo_ikeda_t"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_tomoyo_ikeda.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_natsuko_hosomi"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_natsuko_hosomi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ritsuko_hamada"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_ritsuko_hamada.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mayuka_teramoto"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_mayuka_teramoto.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mayuka_teramoto_t"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_mayuka_teramoto.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_akemi_kubota"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_akemi_kubota.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_akemi_kubota_t"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_akemi_kubota.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_shizuka_tsuruki"
+		texturefile = "gfx/interface/ideas/Chi-Ha-Tan/idea_shizuka_tsuruki.dds"
+	}
+
+	#IDEOLOGIES
+	spriteType = {
+		name = "GFX_ideology_japanese_idealism"
+		texturefile = "gfx/interface/ideologies/Chi-Ha-Tan/japanese_idealism.dds"
+	}	
+    spriteType = {
+		name = "GFX_ideology_japanese_idealism2"
+		texturefile = "gfx/interface/ideologies/Chi-Ha-Tan/japanese_idealism2.dds"
+	}	
+    spriteType = {
+		name = "GFX_ideology_japanese_idealism3"
+		texturefile = "gfx/interface/ideologies/Chi-Ha-Tan/japanese_idealism3.dds"
+	}	
+    spriteType = {
+		name = "GFX_ideology_japanese_idealism4"
+		texturefile = "gfx/interface/ideologies/Chi-Ha-Tan/japanese_idealism4.dds"
 	}
 
 	#EVENTS
@@ -61,14 +123,24 @@ spriteTypes = {
 	#TANKS
 	SpriteType = {
 		name = "GFX_JAP_improved_light_tank_medium"
-		texturefile = "gfx/interface/technologies/Chi-Ha-Tan/JAP_imp_light_tank.dds"
+		texturefile = "gfx/interface/technologies/Chi-Ha-Tan/JAP_imp_light_tank.png"
 	}
 	SpriteType = {
 		name = "GFX_JAP_basic_medium_tank_medium"
-		texturefile = "gfx/interface/technologies/Chi-Ha-Tan/JAP_basic_main_tank.dds"
+		texturefile = "gfx/interface/technologies/Chi-Ha-Tan/JAP_basic_main_tank.png"
 	}
-	SpriteType = {
+	SpriteType = { # Some how defunct for no apparent reason
 		name = "GFX_JAP_amphibious_tank_medium"
-		texturefile = "gfx/interface/technologies/Chi-Ha-Tan/jap_amphibious_tank_123.dds"
+		texturefile = "gfx/interface/technologies/Chi-Ha-Tan/jap_amphibious_tank_1.png"
+	}
+
+	#TRAITS
+	spriteType = {
+		name = "GFX_trait_cht_toseiha_symphatizer"
+		texturefile = "gfx/interface/traits/Chi-Ha-Tan/personal/trait_toseiha_symphatizer.png"
+	}
+	spriteType = {
+		name = "GFX_trait_cht_kodoha_symphatizer"
+		texturefile = "gfx/interface/traits/Chi-Ha-Tan/personal/trait_kodoha_symphatizer.png"
 	}
 }

@@ -48,9 +48,9 @@
  army_law.1.a: "Let Fukuda prove herself first."
  army_law.1.b: "Tamada is the way."
  navy_law.1.t: "Interservice Rivalry - Navy"
- navy_law.1.desc: "While the army is in heat for its future it is of certain guarantee that the navy has everything covered under Haru Tamada despite her army interventions. The case provided for the navy is on which doctrine to focus on. Naval technology will come after. \n\nThe first case presents a carrier initiative where Tamada weighs in on the power and potential impact of the airforce in naval operations. With plans on even intimidating Saunders as such. \n\nThe second case presents an initiative on the battlefleet and submarine forces. Tamada weighs in on the potential of our navy to match levels of St. Gloriana and Imperial Kuromorimine (back then). The basic plan with that is to merely a show of naval power and doctrinal formation. \n\nThis case has rested on the base strike doctrine and there seems to be no practicalities in switching doctrine. The final choice is on the [GetFirstTitle]."
- navy_law.1.a: "Focus on the air fleet."
- navy_law.1.b: "Focus on the surface and subsurface fleet."
+ navy_law.1.desc: "The navy has its own issues with the question on changing its already famed for battleship style. Nishihara and her new theories on an air fleet have presented much momentum and support among the new admirals and sailors while Nagura has debated against that as such because of the argument that our navy will do fine with the battleship. \n\nChanging times are now running out. The final choice is on the [GetFirstTitle]."
+ navy_law.1.a: "The Age of the Carrier has begun."
+ navy_law.1.b: "The Battleship will remain as strong as ever!"
 
  #NISHI SENSHA SHIDAN
  sensha_shidan.1.t: "the Nishi Sensha Shidan"

@@ -71,7 +71,10 @@ country_event = {
 		
 		set_technology = {
 			carrier_primacy = 1
+			submarine_operations_bs = 1
+			convoy_escorts_bs = 1
 		}
+		add_ideas = katsumi_nishihara
 		set_country_flag = cht_carrier
 
 		hidden_effect = { 
@@ -93,13 +96,28 @@ country_event = {
 		name = navy_law.1.b
 		
 		set_technology = {
-			submarine_operations_bs = 1
-			convoy_escorts_bs = 1
+			battlefleet_concentration = 1
+			convoy_sailing = 1
 		}
+		add_ideas = yukiko_nagura
 		set_country_flag = cht_sub_destroyer
 
 		hidden_effect = { 
-			
+			set_technology = {
+				base_strike = 0
+				carrier_primacy = 0
+				submarine_operations_bs = 0
+				convoy_escorts_bs = 0
+
+				carrier_task_forces = 0
+				floating_airfield_bs = 0
+
+				undersea_blockade_bs = 0
+				convoy_interdiction_bs = 0
+
+				escort_patrols = 0
+				convoy_sailing_bs = 0
+			}
 		}
 
 		ai_chance = {
@@ -468,7 +486,7 @@ country_event = {
 			USA = {
 				add_ideas = JAP_USA_pearl_harbor_I1
 			}
-			set_country_flag = 1st_wave
+			set_country_flag = first_wave
 			news_event = { id = cht_news.2 hours = 6 }
 		}
 	}
@@ -516,7 +534,7 @@ country_event = {
 
 			load_oob = "PEARL_HARBOR"
 			news_event = { id = cht_news.2 hours = 6 }
-			set_country_flag = 3rd_wave
+			set_country_flag = third_wave
 		}
 			
 		USA = {
@@ -577,7 +595,7 @@ country_event = {
 		}
 		hidden_effect = {
 			news_event = { id = cht_news.2 hours = 6 }
-			set_country_flag = 3rd_wave
+			set_country_flag = third_wave
 		}
 	}
 
@@ -599,7 +617,7 @@ country_event = {
 				}
 			}
 			news_event = { id = cht_news.2 hours = 6 }
-			set_country_flag = 2nd_wave
+			set_country_flag = second_wave
 		}
 	}
 }

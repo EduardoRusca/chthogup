@@ -103,6 +103,6 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_cht_faceplate"
-		textureFile = "gfx//cht_faceplate.dds"
+		textureFile = "gfx//interface//topbar//musicplayer//cht_faceplate.dds"
 	}
 }

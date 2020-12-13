@@ -56,7 +56,7 @@
 		    	    has_DLC = "Waking the Tiger"
 		    	}
 		    	custom_effect_tooltip = available_political_advisor
-		    	show_ideas_tooltip = sanzo_nosaka
+		    	show_ideas_tooltip = natsuko_hosomi
 			}
 			add_political_power = 200
 		}
@@ -2471,6 +2471,107 @@
 	}
 
 	focus = {
+		id = JAP_coal_liquification
+		icon = GFX_goal_coal_liquification
+		prerequisite = { focus = JAP_nationalize_war_industry }
+		x = 1
+		y = 1
+		relative_position_id = JAP_tora_tora_tora
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+			528 = { is_fully_controlled_by = ROOT }
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			528 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			533 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = JAP_coal_liquification
+				bonus = 1.0
+				uses = 1
+				category = synth_resources	
+			}
+		}
+	}
+
+	focus = {
+		id = JAP_national_mobilization_law
+		icon = GFX_goal_national_mobilization_law
+		prerequisite = { focus = JAP_guide_the_zaibatsus focus = JAP_challenge_the_zaibatsus }
+		x = 6
+		y = 2
+		relative_position_id = JAP_purge_the_kodoha_faction
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
+		completion_reward = {
+			if = {
+				limit = {	
+					has_war_support < 0.5
+				}
+				add_war_support = 0.1
+			}
+			else_if = {
+				limit = {
+					has_idea = war_economy
+				}
+				add_political_power = 150
+			}
+			else = {
+				add_ideas = war_economy
+			}
+		}
+	}
+
+	focus = {
 		id = JAP_nationalize_war_industry
 		icon = GFX_goal_nationalize_war_industry
 		prerequisite = { focus = JAP_guide_the_zaibatsus }
@@ -2737,107 +2838,6 @@
 						amount = 12
 					}
 				}
-			}
-		}
-	}
-
-	focus = {
-		id = JAP_coal_liquification
-		icon = GFX_goal_coal_liquification
-		prerequisite = { focus = JAP_nationalize_war_industry }
-		x = 1
-		y = 1
-		relative_position_id = JAP_tora_tora_tora
-
-		cost = 4
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-			528 = { is_fully_controlled_by = ROOT }
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			528 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-			533 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 3
-					instant_build = yes
-				}
-			}
-			add_tech_bonus = {
-				name = JAP_coal_liquification
-				bonus = 1.0
-				uses = 1
-				category = synth_resources	
-			}
-		}
-	}
-
-	focus = {
-		id = JAP_national_mobilization_law
-		icon = GFX_goal_national_mobilization_law
-		prerequisite = { focus = JAP_guide_the_zaibatsus focus = JAP_challenge_the_zaibatsus }
-		x = 6
-		y = 2
-		relative_position_id = JAP_purge_the_kodoha_faction
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
-		completion_reward = {
-			if = {
-				limit = {	
-					has_war_support < 0.5
-				}
-				add_war_support = 0.1
-			}
-			else_if = {
-				limit = {
-					has_idea = war_economy
-				}
-				add_political_power = 150
-			}
-			else = {
-				add_ideas = war_economy
 			}
 		}
 	}
@@ -3207,6 +3207,16 @@
 			    ideology = neutrality 
 			    long_name = JAP_neutrality_party_new 
 			    name = JAP_neutrality_party_new 
+			}
+			create_field_marshal = {
+				name = "Haru Tamada"
+				picture = "Tamada.dds"
+				traits = { panzer_leader cavalry_leader trait_reckless }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
 			}
 		}
 	}
@@ -4808,7 +4818,7 @@
 			add_political_power = 120
 			add_timed_idea = { idea = JAP_strengthen_civilian_government days = 1095 }
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = kijuro_shidehara
+			show_ideas_tooltip = ritsuko_hamada
 		}
 	}
 
@@ -6363,7 +6373,6 @@
 			add_war_support = 0.05
 			USA = {
 				country_event = sds.10
-				days = 0
 			}
 		}
 	}
@@ -6428,22 +6437,43 @@
 				if = {
 				limit = { is_fully_controlled_by = ROOT }
 				add_manpower = 153645
-				add_state_core = 638
 				}
 			}
 			632 = {
 				if = {
 				limit = { is_fully_controlled_by = ROOT }
 				add_manpower = 4712
-				add_state_core = 632
 				}
 			}
 			631 = {
 				if = {
 				limit = { is_fully_controlled_by = ROOT }
 				add_manpower = 4175
-				add_state_core = 631
 				}
+			}
+			if = {
+				limit = {
+					638 = {
+						is_fully_controlled_by = JAP
+					}
+				}
+				add_state_core = 638
+			}
+			if = {
+				limit = {
+					632 = {
+						is_fully_controlled_by = JAP
+					}
+				}
+				add_state_core = 632
+			}
+			if = {
+				limit = {
+					631 = {
+						is_fully_controlled_by = JAP
+					}
+				}
+				add_state_core = 631
 			}
 		}
 	}
