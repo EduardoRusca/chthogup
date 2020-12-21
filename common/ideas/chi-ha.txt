@@ -178,31 +178,31 @@ ideas = {
 
 			targeted_modifier = {
 		 		tag = CHI
-				compliance_growth_on_our_occupied_states = 0.05
+				compliance_growth_on_our_occupied_states = 0.5
 	   		}
 			targeted_modifier = {
 				tag = PRC
-				compliance_growth_on_our_occupied_states = 0.05
+				compliance_growth_on_our_occupied_states = 0.5
 			}	
 			targeted_modifier = {
 				tag = SHX
-				compliance_growth_on_our_occupied_states = 0.05
+				compliance_growth_on_our_occupied_states = 0.5
 			}
 			targeted_modifier = {
 				tag = GXC
-				compliance_growth_on_our_occupied_states = 0.05
+				compliance_growth_on_our_occupied_states = 0.5
 			}
 			targeted_modifier = {
 				tag = YUN
-				compliance_growth_on_our_occupied_states = 0.05
+				compliance_growth_on_our_occupied_states = 0.5
 			}
 			targeted_modifier = {
 				tag = XSM
-				compliance_growth_on_our_occupied_states = 0.05
+				compliance_growth_on_our_occupied_states = 0.5
 			}
 			targeted_modifier = {
 				tag = SIK
-				compliance_growth_on_our_occupied_states = 0.05
+				compliance_growth_on_our_occupied_states = 0.5
 			}
 		}
 

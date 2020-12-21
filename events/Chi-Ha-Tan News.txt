@@ -4,7 +4,7 @@ news_event = {
 	id = cht_news.1
 	title = cht_news.1.t
 	desc = cht_news.1.desc
-	picture = GFX_news_event_japanese_parade
+	picture = GFX_news_event_haru_tamada_coup_news
 
 	is_triggered_only = yes
 	major = yes
@@ -67,7 +67,7 @@ news_event = {
 	id = cht_news.2
 	title = cht_news.2.t
 	desc = cht_news.2.desc
-	picture = GFX_news_event_usa_japan_at_war
+	picture = GFX_news_event_saunders_chihatan_at_war
 
 	is_triggered_only = yes
 	major = yes

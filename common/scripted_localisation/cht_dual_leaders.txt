@@ -13,8 +13,17 @@ defined_text = {
 		trigger = {
 			original_tag = JAP
 			has_government = neutrality
+			NOT = { JAP = { has_country_leader = { ruling_only = yes name = "Haru Tamada" } } }
 		}
 		localization_key = JAP_EMPRESS_SHOGUN_TITLE
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_government = neutrality
+			JAP = { has_country_leader = { ruling_only = yes name = "Haru Tamada" } }
+		}
+		localization_key = JAP_REGENT_TITLE
 	}
 	text = {
 		localization_key = DEFAULT_FIRST_TITLE
@@ -25,7 +34,7 @@ defined_text = {
 	name = GetSecondTitle
 	text = {
 		trigger = {
-			tag = JAP
+			original_tag = JAP
 			OR = {
 				has_government = fascism
 				has_government = neutrality
@@ -57,7 +66,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			tag = JAP
+			original_tag = JAP
 			has_government = neutrality
 			has_completed_focus = JAP_showa_restoration
 		}
@@ -87,7 +96,7 @@ defined_text = {
 	}
     text = {
         trigger = {
-			tag = JAP
+			original_tag = JAP
 			has_government = neutrality
 			has_completed_focus = JAP_showa_restoration
 		}
@@ -95,7 +104,7 @@ defined_text = {
 	}
 	text = {
         trigger = {
-			tag = JAP
+			original_tag = JAP
 			has_government = neutrality
 			has_completed_focus = JAP_modern_shogunate
 		}
@@ -118,7 +127,7 @@ defined_text = {
 	}
 	text = {
         trigger = {
-			tag = JAP
+			original_tag = JAP
 			has_government = neutrality
 			has_completed_focus = JAP_showa_restoration
 		}
@@ -126,7 +135,7 @@ defined_text = {
 	}
 	text = {
         trigger = {
-			tag = JAP
+			original_tag = JAP
 			has_government = neutrality
 			has_completed_focus = JAP_modern_shogunate
 		}

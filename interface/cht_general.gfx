@@ -113,6 +113,95 @@ spriteTypes = {
 		name = "GFX_report_event_pravda_ultimatum"
 		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_pravda_ultimatum.dds"
 	}
+	spriteType = {
+		name = "GFX_report_event_haru_tamada_coup"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_haru_tamada_coup.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_coup_aftermath"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_coup_aftermath.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_chihatan_kuromorimine_axis"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_chihatan_kuromorimine_axis.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_first_wave"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_first_wave.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_second_wave"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_second_wave.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_third_wave"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_third_wave.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_marco_polo_rejected"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_marco_polo_rejected.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_marco_polo_accepted"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_marco_polo_accepted.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_indochina_rejected"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_indochina_rejected.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_indochina_accepted"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_indochina_accepted.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_oryou"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_oryou.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ikeda"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_ikeda.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_chihatan_pravda_war"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_chihatan_pravda_war.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_border_conflict_victory"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_border_conflict_victory.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_escalate_border_conflict"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_escalate_border_conflict.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_haru_tamada_coup_news"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_haru_tamada_coup_news.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_saunders_chihatan_at_war"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_saunders_chihatan_at_war.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_cht_treaty_sign"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_cht_treaty_sign.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_marco_polo_rejected"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_marco_polo_rejected.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_marco_polo_accepted"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_marco_polo_accepted.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_indochina_rejected"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_indochina_rejected.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_indochina_accepted"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_news_event_indochina_accepted.dds"
+	}
 
 	#DECISIONS
 	spriteType = {

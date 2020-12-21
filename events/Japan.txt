@@ -1,0 +1,257 @@
+﻿###########################
+# Japanese Events
+###########################
+
+add_namespace = japan
+
+# Chinese Refuse Concessions
+country_event = {
+	id = japan.1
+	title = china.1.t
+	desc = japan.1.d
+	picture = GFX_report_event_marco_polo_rejected
+
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.1.a
+		add_war_support = 0.05
+		create_wargoal = {
+  			type = annex_everything
+  			target = CHI
+  		}
+  		create_wargoal = {
+  			type = annex_everything
+  			target = SHX
+  		}
+		hidden_effect = {
+			country_event = { days = 5 id = news.1 }
+		}
+		USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
+		if = {
+			limit = {
+				JAP = { has_country_leader = { ruling_only = yes name = "Kinuyo Nishi" } }
+			}
+			remove_country_leader_trait = totsugeki_sanction
+		}
+	}
+}
+
+# Chinese Concessions
+country_event = {
+	id = japan.2
+	title = china.1.t
+	desc = japan.2.d
+	picture = GFX_report_event_marco_polo_accepted
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.2.a
+		effect_tooltip = {
+			set_truce = { target = FROM days = 180 }
+		}
+		hidden_effect = {
+			country_event = { days = 5 id = news.2 }
+		}
+		if = {
+			limit = {
+				608 = {
+					is_controlled_by = FROM
+				}
+			}
+			JAP = {
+				transfer_state = 608
+			}
+		}
+		if = {
+			limit = {
+				597 = {
+					is_controlled_by = FROM
+				}
+			}
+			JAP = {
+				transfer_state = 597
+			}
+		}
+		if = {
+			limit = {
+				614 = {
+					is_controlled_by = FROM
+				}
+			}
+			JAP = {
+				transfer_state = 614
+			}
+		}
+		if = {
+			limit = {
+				743 = {
+					is_controlled_by = FROM
+				}
+			}
+			JAP = {
+				transfer_state = 743
+			}
+		}
+		add_state_claim = 613
+		if = {
+			limit = {
+				has_country_leader = { id = 700 ruling_only = yes }
+			}
+			remove_country_leader_trait = imperial_sanction
+		}
+		
+		add_ai_strategy = {
+			type = antagonize
+			id = "CHI"
+			value = 500
+		}
+	}
+}
+
+# French Accept Demands
+country_event = {
+	id = japan.6
+	title = japan.6.t
+	desc = japan.6.d
+	picture = GFX_report_event_indochina_accepted
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.6.a
+		USA = { set_country_flag = { flag = USA_indochina_window days = 60 value = 1 } }
+		hidden_effect = {
+			news_event = { days = 5 id = news.5 }
+		}
+		JAP = {
+			if = {
+				limit = {
+					286 = {
+						CONTROLLER = {
+							OR = {
+								original_tag = FRA
+								is_subject_of = FRA
+								is_subject_of = VIC
+							}
+						}
+					}
+				}
+				transfer_state = 286
+			}
+			if = {
+				limit = {
+					670 = {
+						CONTROLLER = {
+							OR = {
+								original_tag = FRA
+								is_subject_of = FRA
+								is_subject_of = VIC
+							}
+						}
+					}
+				}
+				transfer_state = 670
+			}
+			if = {
+				limit = {
+					671 = {
+						CONTROLLER = {
+							OR = {
+								original_tag = FRA
+								is_subject_of = FRA
+								is_subject_of = VIC
+							}
+						}
+					}
+				}
+				transfer_state = 671
+			}
+			if = {
+				limit = {
+					741 = {
+						CONTROLLER = {
+							OR = {
+								original_tag = FRA
+								is_subject_of = FRA
+								is_subject_of = VIC
+							}
+						}
+					}
+				}
+				transfer_state = 741
+			}
+			if = {
+				limit = {
+					728 = {
+						CONTROLLER = {
+							OR = {
+								original_tag = FRA
+								is_subject_of = FRA
+								is_subject_of = VIC
+							}
+						}
+					}
+				}
+				transfer_state = 728
+			}
+			add_named_threat = { threat = 3 name = france.1.t }
+		}
+	}
+}
+
+# French Reject Demands
+country_event = {
+	id = japan.7
+	title = japan.7.t
+	desc = japan.7.d
+	picture = GFX_report_event_indochina_rejected
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.7.a
+		create_wargoal = {
+			type = take_state
+			target = FROM
+			generator = {
+				286 741 670 671 728
+			}
+		}
+		hidden_effect = {
+			country_event = { days = 5 id = news.6 }
+		}
+	}
+}
+
+# Germany Agrees to Withdraw Falkenhausen
+country_event = {
+	id = japan.8
+	title = japan.8.t
+	desc = japan.8.d
+	picture = GFX_report_event_oryou
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.8.a
+	}
+}
+
+# Germany Refuses to Withdraw Falkenhausen
+country_event = {
+	id = japan.9
+	title = japan.9.t
+	desc = japan.9.d
+	picture = GFX_report_event_oryou
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.9.a
+	}
+	#option = { # Withdraw from the Anti-Comintern Pact
+	#	name = japan.9.b
+	#}
+}

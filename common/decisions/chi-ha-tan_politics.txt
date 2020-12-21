@@ -115,7 +115,7 @@ chihatan_politics = {
 			add_stability = 0.25
 			add_war_support = 0.25
 
-			activate_decision = final_ultimatum
+			unlock_decision_tooltip  = final_ultimatum
 			set_country_flag = cht_hokushinron
 		}
 		
@@ -140,11 +140,6 @@ chihatan_politics = {
 		visible = {	
 			tag = JAP
 			has_country_flag = cht_tamada_chosen
-			has_country_flag = cht_hokushinron
-		}
-
-		activation = {
-			tag = JAP
 			has_country_flag = cht_hokushinron
 		}
 
@@ -214,8 +209,8 @@ chihatan_politics = {
 			add_stability = 0.25
 			add_war_support = 0.25
 
-			activate_decision = white_peace_USA
-			activate_decision = white_peace_ENG
+			unlock_decision_tooltip = white_peace_USA
+			unlock_decision_tooltip = white_peace_ENG
 			set_country_flag = cht_nanshinron
 		}
 		
@@ -240,11 +235,6 @@ chihatan_politics = {
 		visible = {
 			tag = JAP
 			has_country_flag = cht_fukuda_chosen
-			has_country_flag = cht_nanshinron
-		}
-
-		activation = {
-			tag = JAP
 			has_country_flag = cht_nanshinron
 		}
 
@@ -283,12 +273,7 @@ chihatan_politics = {
 			tag = JAP
 			has_country_flag = cht_fukuda_chosen
 			has_country_flag = cht_nanshinron
-		}	
-
-		activation = {
-			tag = JAP
-			has_country_flag = cht_nanshinron
-		}	
+		}
 
 		cost = 50		#The cost to execute the decision, by default its political power.
 

@@ -1,0 +1,968 @@
+﻿add_namespace = sds
+add_namespace = pvd
+add_namespace = glo
+
+country_event = {
+	id = sds.1
+	title = sds.1.t
+	desc = sds.1.d
+	picture = GFX_report_event_usa_pearl_harbor_airphoto
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sds.1.a
+		
+		if = {
+			limit = {
+				638 = {
+					is_fully_controlled_by = USA
+				}
+			}
+			FROM = { transfer_state = 638 }
+		}
+
+		if = {
+			limit = {
+				632 = {
+					is_fully_controlled_by = USA
+				}
+			}
+			FROM = { transfer_state = 632 }
+		}
+
+		if = {
+			limit = {
+				631 = {
+					is_fully_controlled_by = USA
+				}
+			}
+			FROM = { transfer_state = 631 }
+		}
+
+		add_stability = -0.08
+		add_war_support = 0.12
+
+		hidden_effect = {
+			JAP = {
+				country_event = { id = sds.2 days = 0 }
+			}
+		}
+
+		ai_chance = {
+			factor = 20
+
+			modifier = {
+				add = 60
+				tag = USA
+				has_idea = great_depression
+			}
+			modifier = {
+				add = 30
+				tag = USA
+				has_idea = great_depression_2
+			}
+			modifier = {
+				add = 20
+				tag = USA
+				has_idea = great_depression_3
+			}
+		}
+	}
+
+	option = {
+		name = sds.1.b
+		
+		JAP = {
+			create_wargoal = {
+				type = take_state_focus
+				target = USA
+				generator = { 638 632 631 }
+			}
+		}
+
+		add_stability = 0.08
+		add_war_support = -0.15
+
+		add_named_threat = { threat = 3 name = ULTIMATUMCHT_DENIED }
+
+		hidden_effect = {
+			JAP = {
+				country_event = { id = sds.3 days = 0 }
+			}
+		}
+
+		ai_chance = {	
+			factor = 160
+
+			modifier = {
+				add = -150
+				tag = JAP
+				strength_ratio = { tag = USA ratio > 0.75 }
+			}
+			modifier = {
+				add = -150
+				tag = USA
+				has_completed_focus = USA_neutrality_act
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sds.2
+	title = sds.2.t
+	desc = sds.2.d
+	picture = GFX_report_event_dutch_soldiers_indonesia
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sds.2.a
+		
+		if = {
+			limit = {
+				638 = {
+					is_fully_controlled_by = USA
+				}
+			}
+			FROM = { transfer_state = 638 }
+		}
+
+		if = {
+			limit = {
+				632 = {
+					is_fully_controlled_by = USA
+				}
+			}
+			FROM = { transfer_state = 632 }
+		}
+
+		if = {
+			limit = {
+				631 = {
+					is_fully_controlled_by = USA
+				}
+			}
+			FROM = { transfer_state = 631 }
+		}
+
+		ai_chance = {	
+			factor = 1	
+		}
+	}
+}
+
+country_event = {
+	id = sds.3
+	title = sds.3.t
+	desc = sds.3.d
+	picture = GFX_report_event_oahu_withdraws
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sds.3.a
+		
+		add_stability = 0.2
+		add_war_support = 0.2
+
+		create_wargoal = {
+			type = take_state_focus
+			target = USA
+			generator = { 638 632 631 }
+		}
+
+		country_event = { id = cht2.10 }
+
+		ai_chance = {	
+			factor = 80
+
+			modifier = {
+				add = 80
+				CHI = {
+					has_war_with = ROOT
+					surrender_progress < 0.5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = sds.3.b
+		
+		add_stability = -0.2
+		add_war_support = -0.2
+		add_political_power = -100
+
+		ai_chance = {	
+			factor = 5
+
+			modifier = {
+				add = 10
+				tag = JAP
+				has_war_with = CHI
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sds.4
+	title = sds.4.t
+	desc = sds.4.desc
+	picture = GFX_report_event_saunders_treaty
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sds.4.a
+		
+		white_peace = { 
+			tag = JAP
+			message = LOS_ANGELES_TREATY
+		}
+
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = sds.5
+				}
+			}
+			JAP = {
+				annex_country = {
+   					target = PHI
+    				transfer_troops = yes
+				}
+				transfer_state = 638
+				transfer_state = 632
+				transfer_state = 631
+				transfer_state = 630
+				transfer_state = 642
+				transfer_state = 727
+				transfer_state = 629
+				transfer_state = 650
+				transfer_state = 463
+			}
+		}
+
+		ai_chance = {
+			factor = 80
+
+			modifier = {
+				add = 240
+				tag = USA
+				has_war_with = GER
+			}
+		}
+	}
+
+	option = {
+		name = sds.4.b
+		
+		JAP = {
+			add_ideas = cht_furious
+		}
+
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = sds.6
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 80
+
+			modifier = {
+				add = 240
+				tag = USA
+				NOT = {
+					has_war_with = GER
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = sds.5
+	title = sds.5.t
+	desc = sds.5.desc
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sds.5.a
+		
+		JAP = {
+			annex_country = {
+   				target = PHI
+    			transfer_troops = yes
+			}
+			transfer_state = 638
+			transfer_state = 632
+			transfer_state = 631
+			transfer_state = 630
+			transfer_state = 642
+			transfer_state = 727
+			transfer_state = 629
+			transfer_state = 650
+			transfer_state = 463
+		}
+	}
+}
+
+country_event = {
+	id = sds.6
+	title = sds.6.t
+	desc = sds.6.desc
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = sds.6.a
+		
+		if = {
+			limit = {
+				JAP = {
+					NOT = {
+						has_idea = cht_furious
+					}
+				}
+			}
+			add_ideas = cht_furious
+		}
+	}
+}
+
+country_event = {
+	id = pvd.1
+	title = pvd.1.t
+	desc = pvd.1.desc
+	picture = GFX_report_event_pravda_ultimatum
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = pvd.1.a
+		
+		white_peace = {
+			tag = JAP
+			message = ULAANBAATOR_TREATY
+		}
+
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = pvd.2
+				}
+			}
+			JAP = {
+				transfer_state = 655
+			}
+			MAN = {
+				transfer_state = 408
+				transfer_state = 409
+				transfer_state = 560
+				transfer_state = 657
+				transfer_state = 561
+				transfer_state = 563
+				transfer_state = 564
+				transfer_state = 566
+			}
+			if = {
+				limit = {
+					MEN = {
+						exists = yes
+					}
+				}
+				MEN = {
+					transfer_state = 330
+					transfer_state = 329
+				}
+				else = {
+					JAP = {
+						transfer_state = 330
+						transfer_state = 329
+					}
+				}
+			}
+			if = {
+				limit = {
+					MAN = {
+						exists = yes
+					}
+				}
+				MAN = {
+					transfer_state = 408
+					transfer_state = 409
+					transfer_state = 560
+					transfer_state = 657
+					transfer_state = 561
+					transfer_state = 563
+					transfer_state = 564
+					transfer_state = 566
+				}
+				else = {
+					JAP = {
+						transfer_state = 408
+						transfer_state = 409
+						transfer_state = 560
+						transfer_state = 657
+						transfer_state = 561
+						transfer_state = 563
+						transfer_state = 564
+						transfer_state = 566
+					}
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 80
+
+			modifier = {
+				add = 240
+				tag = SOV
+				has_war_with = GER
+			}
+		}
+	}
+
+	option = {
+		name = pvd.1.b
+		
+		JAP = {
+			add_ideas = cht_furious
+		}
+
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = pvd.3
+				}
+			}
+		}
+
+		ai_chance = {	
+			factor = 80
+
+			modifier = {
+				add = 240
+				tag = SOV
+				NOT = {
+					has_war_with = GER
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pvd.2
+	title = pvd.2.t
+	desc = pvd.2.desc
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = pvd.2.a
+		
+		JAP = {
+			transfer_state = 655
+		}
+		MAN = {
+			transfer_state = 408
+			transfer_state = 409
+			transfer_state = 560
+			transfer_state = 657
+			transfer_state = 561
+			transfer_state = 563
+			transfer_state = 564
+			transfer_state = 566
+		}
+		if = {
+			limit = {
+				MEN = {
+					exists = yes
+				}
+			}
+			MEN = {
+				transfer_state = 330
+				transfer_state = 329
+			}
+			else = {
+				JAP = {
+					transfer_state = 330
+					transfer_state = 329
+				}
+			}
+		}
+		if = {
+			limit = {
+				MAN = {
+					exists = yes
+				}
+			}
+			MAN = {
+				transfer_state = 408
+				transfer_state = 409
+				transfer_state = 560
+				transfer_state = 657
+				transfer_state = 561
+				transfer_state = 563
+				transfer_state = 564
+				transfer_state = 566
+			}
+			else = {
+				JAP = {
+					transfer_state = 408
+					transfer_state = 409
+					transfer_state = 560
+					transfer_state = 657
+					transfer_state = 561
+					transfer_state = 563
+					transfer_state = 564
+					transfer_state = 566
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pvd.3
+	title = pvd.3.t
+	desc = pvd.3.desc
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = pvd.3.a
+		
+		if = {
+			limit = {
+				JAP = {
+					NOT = {
+						has_idea = cht_furious
+					}
+				}
+			}
+			add_ideas = cht_furious
+		}
+	}
+}
+
+country_event = {
+	id = glo.1
+	title = glo.1.t
+	desc = glo.1.desc
+	picture = GFX_report_event_gloriana_treaty
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = glo.1.a
+		
+		white_peace = {
+			tag = JAP
+			message = GLORIANA_TREATY
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = HOL
+				}
+			}
+			HOL = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = BEL
+				}
+			}
+			BEL = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = LUX
+				}
+			}
+			LUX = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = POL
+				}
+			}
+			POL = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = DEN
+				}
+			}
+			DEN = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = NOR
+				}
+			}
+			NOR = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = FRA
+				}
+			}
+			FRA = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = CAN
+				}
+			}
+			CAN = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = RAJ
+				}
+			}
+			RAJ = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = AST
+				}
+			}
+			AST = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = NZL
+				}
+			}
+			NZL = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = SAF
+				}
+			}
+			SAF = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = USA
+				}
+			}
+			USA = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+		if = {
+			limit = {
+				JAP = {
+					has_war_with = PHI
+				}
+			}
+			PHI = {
+				white_peace = {
+					tag = JAP
+					message = GLORIANA_TREATY
+				}
+			}
+		}
+
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = glo.2
+				}
+			}
+			JAP = {
+				annex_country = {
+   					target = MAL
+    				transfer_troops = yes
+				}
+				annex_country = {
+   					target = INS
+    				transfer_troops = yes
+				}
+				transfer_state = 721
+				transfer_state = 523
+				transfer_state = 737
+				transfer_state = 634
+				transfer_state = 729
+				transfer_state = 826
+				transfer_state = 728
+				transfer_state = 639
+				transfer_state = 725
+				transfer_state = 643
+				transfer_state = 734
+				transfer_state = 635
+				transfer_state = 636
+				transfer_state = 726
+				transfer_state = 641
+				transfer_state = 270
+			}
+			if = {
+				limit = {
+					SIA = {
+						exists = yes
+						is_in_faction_with = JAP
+					}
+				}
+				SIA = {
+					transfer_state = 288
+					transfer_state = 640
+					transfer_state = 434
+					transfer_state = 432
+					transfer_state = 430
+					transfer_state = 733
+					transfer_state = 422
+					transfer_state = 320
+				}
+				else = {
+					JAP = {
+						transfer_state = 288
+						transfer_state = 640
+						transfer_state = 434
+						transfer_state = 432
+						transfer_state = 430
+						transfer_state = 733
+						transfer_state = 422
+						transfer_state = 320
+					}
+				}
+			}
+		}
+
+		ai_chance = {
+			factor = 80
+
+			modifier = {
+				add = 240
+				tag = ENG
+				has_war_with = GER
+			}
+		}
+	}
+
+	option = {
+		name = glo.1.b
+		
+		JAP = {
+			add_ideas = cht_furious
+		}
+
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = glo.3
+				}
+			}
+		}
+
+		ai_chance = {	
+			factor = 80
+
+			modifier = {
+				add = 240
+				tag = ENG
+				NOT = {
+					has_war_with = GER
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = glo.2
+	title = glo.2.t
+	desc = glo.2.desc
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = glo.2.a
+		
+		JAP = {
+			annex_country = {
+   				target = MAL
+    			transfer_troops = yes
+			}
+			annex_country = {
+   				target = INS
+    			transfer_troops = yes
+			}
+			transfer_state = 721
+			transfer_state = 523
+			transfer_state = 737
+			transfer_state = 634
+			transfer_state = 729
+			transfer_state = 326
+			transfer_state = 728
+			transfer_state = 639
+			transfer_state = 725
+			transfer_state = 643
+			transfer_state = 734
+			transfer_state = 635
+			transfer_state = 636
+			transfer_state = 726
+			transfer_state = 641
+			transfer_state = 270
+		}
+		if = {
+			limit = {
+				SIA = {
+					exists = yes
+					is_in_faction_with = JAP
+				}
+			}
+			SIA = {
+				transfer_state = 288
+				transfer_state = 640
+				transfer_state = 434
+				transfer_state = 432
+				transfer_state = 430
+				transfer_state = 733
+				transfer_state = 422
+				transfer_state = 320
+			}
+			else = {
+				JAP = {
+					transfer_state = 288
+					transfer_state = 640
+					transfer_state = 434
+					transfer_state = 432
+					transfer_state = 430
+					transfer_state = 733
+					transfer_state = 422
+					transfer_state = 320
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = glo.3
+	title = glo.3.t
+	desc = glo.3.desc
+	picture = GFX_report_event_cht_treaty_sign
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = glo.3.a
+		
+		if = {
+			limit = {
+				JAP = {
+					NOT = {
+						has_idea = cht_furious
+					}
+				}
+			}
+			add_ideas = cht_furious
+		}
+	}
+}

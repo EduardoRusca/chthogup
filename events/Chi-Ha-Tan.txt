@@ -219,7 +219,7 @@ country_event = {
 	id = cht2.1
 	title = cht2.1.t
 	desc = cht2.1.desc
-	picture = GFX_report_event_japanese_parade
+	picture = GFX_report_event_haru_tamada_coup
 
 	is_triggered_only = yes
 	
@@ -242,7 +242,7 @@ country_event = {
 	id = cht2.2
 	title = cht2.2.t
 	desc = cht2.2.desc
-	picture = GFX_report_event_japanese_parade
+	picture = GFX_report_event_coup_aftermath
 
 	is_triggered_only = yes
 	
@@ -268,7 +268,7 @@ country_event = {
 	id = cht2.3
 	title = cht2.3.t
 	desc = cht2.3.desc
-	picture = GFX_report_event_second_vienna_award_pact
+	picture = GFX_report_event_chihatan_kuromorimine_axis
 
 	is_triggered_only = yes
 	
@@ -311,7 +311,7 @@ country_event = {
 	id = cht2.4
 	title = cht2.4.t
 	desc = cht2.4.desc
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_report_event_cht_treaty_sign
 
 	is_triggered_only = yes
 	
@@ -324,7 +324,7 @@ country_event = {
 	id = cht2.5
 	title = cht2.5.t
 	desc = cht2.5.desc
-	picture = GFX_report_event_generic_read_write
+	picture = GFX_report_event_cht_treaty_sign
 
 	is_triggered_only = yes
 	
@@ -337,7 +337,7 @@ country_event = {
 	id = cht2.6
 	title = cht2.6.t
 	desc = cht2.6.desc
-	picture = GFX_report_event_second_vienna_award_pact
+	picture = GFX_report_event_chihatan_kuromorimine_axis
 
 	is_triggered_only = yes
 	
@@ -381,7 +381,7 @@ country_event = { # cht2.10-cht2.12 ARE NOT MADE BY ME. THEY ARE OF COURTESY OF 
 	id = cht2.10  # PLAY THEIR MOD PACKS, IT'S REALLY FUN!
 	title = cht2.10.t
 	desc = cht2.10.d
-	picture = GFX_report_event_usa_pearl_harbor_airphoto
+	picture = GFX_report_event_first_wave
 
 	is_triggered_only = yes
 		
@@ -431,7 +431,7 @@ country_event = {
 	id = cht2.11
 	title = cht2.11.t
 	desc = cht2.11.d
-	picture = GFX_report_event_fighters
+	picture = GFX_report_event_second_wave
 
 	is_triggered_only = yes
 		
@@ -496,7 +496,7 @@ country_event = {
 	id = cht2.12
 	title = cht2.12.t
 	desc = cht2.12.d
-	picture = GFX_report_event_generic_bombers
+	picture = GFX_report_event_third_wave
 
 	is_triggered_only = yes
 		
