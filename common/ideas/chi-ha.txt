@@ -572,16 +572,17 @@ ideas = {
 			picture = natsuko_hosomi
 			
 			available = {
-				if = {
-					limit = {
-						has_DLC = "Waking the Tiger"
-					}
-					has_completed_focus = JAP_the_unthinkable_option
-				}
-				if = {
-					limit = { has_dlc = "Man the Guns" }	
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				has_country_flag = cht_hosomi_update
+				#if = { #nishi
+				#	limit = {
+				#		has_DLC = "Waking the Tiger"
+				#	}
+				#	has_completed_focus = JAP_the_unthinkable_option
+				#}
+				#if = {
+				#	limit = { has_dlc = "Man the Guns" }	
+				#	NOT = { has_autonomy_state = autonomy_supervised_state }
+				#}
 			}
 
 			allowed = {
@@ -605,12 +606,13 @@ ideas = {
 			picture = ritsuko_hamada
 			
 			available = {
-				if = {
-					limit = {
-						has_DLC = "Waking the Tiger"
-					}
-					has_completed_focus = JAP_strengthen_civilian_government
-				}
+				has_country_flag = cht_hamada_update
+				#if = { #nishi
+				#	limit = {
+				#		has_DLC = "Waking the Tiger"
+				#	}
+				#	has_completed_focus = JAP_strengthen_civilian_government
+				#}
 				if = {
 					limit = { has_dlc = "Man the Guns" }	
 					NOT = { has_autonomy_state = autonomy_supervised_state }

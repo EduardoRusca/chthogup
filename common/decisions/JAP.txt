@@ -862,7 +862,8 @@ JAP_pacific_guardian = {
 		fire_only_once = yes
 		is_good = no 
 		activation = {
-			has_completed_focus = JAP_the_korean_question
+			#has_completed_focus = JAP_the_korean_question #nishi
+			has_country_flag = cht_hamada_update
 			has_full_control_of_state = 525
 			has_full_control_of_state = 527
 			KOR = { exists = no }
@@ -1058,7 +1059,8 @@ JAP_colonial_independence = {
 		}
 
 		visible = {
-			has_completed_focus = JAP_liberate_manchuria
+			#has_completed_focus = JAP_liberate_manchuria #nishi
+			has_country_flag = cht_hamada_update
 			609 = {
 				owner = {
 					OR = {

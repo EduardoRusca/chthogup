@@ -7130,7 +7130,8 @@
 			factor = 1
 			modifier = {
 				factor = 2
-				has_completed_focus = JAP_strengthen_civilian_government
+				#has_completed_focus = JAP_strengthen_civilian_government #nishi
+				has_country_flag = cht_hamada_updated
 			}
 		}
 
