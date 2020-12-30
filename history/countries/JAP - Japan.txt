@@ -21,6 +21,12 @@ add_ideas = {
 	tomoyo_ikeda
 }
 
+complete_national_focus = JAP_failure_on_62nd_senshadou_tournament
+complete_national_focus = JAP_embrace_tradition
+complete_national_focus = JAP_nishi_era
+complete_national_focus = JAP_failure
+complete_national_focus = JAP_a_trip_to_ooarai
+
 609 = {
 	start_resistance = yes
 	set_compliance = 5
@@ -268,6 +274,12 @@ create_import = {
 	complete_national_focus = JAP_chihatan_theoretical_division
 	complete_national_focus = JAP_ikeda_section_3
 	complete_national_focus = JAP_arts_department
+
+	complete_national_focus = JAP_failure_on_62nd_senshadou_tournament
+	complete_national_focus = JAP_embrace_tradition
+	complete_national_focus = JAP_nishi_era
+	complete_national_focus = JAP_failure
+	complete_national_focus = JAP_a_trip_to_ooarai
 
 	declare_war_on = {
 		target = CHI

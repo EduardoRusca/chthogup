@@ -66,10 +66,10 @@ chihatan_politics = {
 		# AI LOGIC FOR THIS DECISION/MISSION
 
 		ai_will_do = {
-			factor = 160
+			factor = 4000
 
 			modifier = {
-				add = -120
+				add = -3840
 				tag = JAP
 				is_historical_focus_on = no
 			}
@@ -160,7 +160,7 @@ chihatan_politics = {
 		# AI LOGIC FOR THIS DECISION/MISSION
 
 		ai_will_do = {
-			factor = 160
+			factor = 320
 		}
 	}
 	nanshinron = {

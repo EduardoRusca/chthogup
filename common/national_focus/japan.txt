@@ -1876,7 +1876,7 @@
 		y = 2
 		relative_position_id = JAP_purge_the_kodoha_faction
 
-		cost = 5
+		cost = 1.6
 
 		ai_will_do = {
 			factor = 2
@@ -1946,7 +1946,7 @@
 		}
 
 		available = {
-
+			has_idea = war_economy
 		}
 
 		bypass = {
@@ -1957,7 +1957,7 @@
 		}
 
 		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2312,7 +2312,7 @@
 		}
 
 		available = {
-
+			has_idea = war_economy
 		}
 
 		bypass = {
@@ -2323,7 +2323,7 @@
 		}
 
 		cancel_if_invalid = yes
-		continue_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -4352,6 +4352,317 @@
 	}
 
 	focus = {
+		id = JAP_failure_on_62nd_senshadou_tournament
+		icon = GFX_goal_failure_on_62nd_senshadou_tournament
+		prerequisite = {
+
+		}
+		x = 30 #21
+		y = 0
+		relative_position_id = JAP_purge_the_kodoha_faction
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				#has_dlc = "Waking the Tiger"
+				always = no
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JAP_heed_reform
+		icon = GFX_goal_heed_reform
+		prerequisite = {
+
+		}
+		mutually_exclusive = {
+			focus = JAP_embrace_tradition
+		}
+		x = 32 #21
+		y = 0
+		relative_position_id = JAP_purge_the_kodoha_faction
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				#has_dlc = "Waking the Tiger"
+				always = no
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JAP_embrace_tradition
+		icon = GFX_goal_embrace_tradition
+		prerequisite = {
+
+		}
+		mutually_exclusive = {
+			focus = JAP_heed_reform
+		}
+		x = 34 #21
+		y = 0
+		relative_position_id = JAP_purge_the_kodoha_faction
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				#has_dlc = "Waking the Tiger"
+				always = no
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JAP_nishi_era
+		icon = GFX_goal_nishi_era
+		prerequisite = {
+			focus = JAP_failure_on_62nd_senshadou_tournament
+		}
+		prerequisite = {
+			focus = JAP_heed_reform
+			focus = JAP_embrace_tradition
+		}
+		x = 32 #21
+		y = 1
+		relative_position_id = JAP_purge_the_kodoha_faction
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				#has_dlc = "Waking the Tiger"
+				always = no
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JAP_victory
+		icon = GFX_goal_victory
+		prerequisite = {
+			focus = JAP_nishi_era
+		}
+		mutually_exclusive = {
+			focus = JAP_failure
+		}
+		x = 33 #21
+		y = 2
+		relative_position_id = JAP_purge_the_kodoha_faction
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				#has_dlc = "Waking the Tiger"
+				always = no
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JAP_failure
+		icon = GFX_goal_failure
+		prerequisite = {
+			focus = JAP_nishi_era
+		}
+		mutually_exclusive = {
+			focus = JAP_victory
+		}
+		x = 35 #21
+		y = 2
+		relative_position_id = JAP_purge_the_kodoha_faction
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				#has_dlc = "Waking the Tiger"
+				always = no
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JAP_a_trip_to_ooarai
+		icon = GFX_goal_a_trip_to_ooarai
+		prerequisite = {
+			focus = JAP_victory
+			focus = JAP_failure
+		}
+		x = 34 #21
+		y = 3
+		relative_position_id = JAP_purge_the_kodoha_faction
+		offset = {
+			x = 4
+			y = 0
+			trigger = {
+				#has_dlc = "Waking the Tiger"
+				always = no
+			}
+		}
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = JAP_waking_the_tiger
 		icon = GFX_goal_waking_the_tiger
 		prerequisite = {
@@ -4392,7 +4703,7 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_political_power = 150
+			add_political_power = 100
 			swap_ideas = {
 				remove_idea = JAP_militarism
 				add_idea = JAP_militarism2				
@@ -6925,9 +7236,9 @@
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			715 = { add_extra_state_shared_building_slots = 1 }
-			610 = { add_extra_state_shared_building_slots = 1 }
-			328 = { add_extra_state_shared_building_slots = 1 }
+			715 = { add_extra_state_shared_building_slots = 3 }
+			610 = { add_extra_state_shared_building_slots = 3 }
+			328 = { add_extra_state_shared_building_slots = 3 }
 		}
 	}
 
@@ -7566,7 +7877,7 @@
 
 	focus = {
 		id = JAP_range_focus
-		icon = GFX_goal_generic_air_production
+		icon = GFX_goal_range_focus
 		prerequisite = { focus = JAP_fighter_modernization }
 		mutually_exclusive = { focus = JAP_agility_focus }
 		x = 0
@@ -7599,7 +7910,7 @@
 
 	focus = {
 		id = JAP_agility_focus
-		icon = GFX_goal_generic_air_production
+		icon = GFX_goal_agility_focus
 		prerequisite = { focus = JAP_fighter_modernization }
 		mutually_exclusive = { focus = JAP_range_focus }
 		x = -2
@@ -7779,7 +8090,12 @@
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			remove_ideas = JAP_duplicate_research_efforts
+			add_tech_bonus = {
+				name = JAP_unified_fighter_development
+				bonus = 1.0
+				uses = 1
+				category = cat_heavy_fighter				
+			}
 		}
 	}
 

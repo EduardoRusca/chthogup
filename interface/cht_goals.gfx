@@ -278,4 +278,49 @@ spriteTypes = {
 	name = "GFX_goal_chihatan_ordinance"
 	texturefile = "gfx/interface/goals/Chi-Ha-Tan/chihatan_ordinance.tga"			
 	}
+
+	SpriteType = {
+	name = "GFX_goal_failure_on_62nd_senshadou_tournament"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_failure_on_62nd_senshadou_tournament.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_heed_reform"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_heed_reform.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_embrace_tradition"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_embrace_tradition.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_nishi_era"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_nishi_era.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_victory"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_victory.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_failure"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_failure.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_a_trip_to_ooarai"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_a_trip_to_ooarai.png"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_agility_focus"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_agility_focus.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_range_focus"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_range_focus.dds"			
+	}
 }

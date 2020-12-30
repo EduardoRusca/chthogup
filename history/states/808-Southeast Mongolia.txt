@@ -1,0 +1,29 @@
+
+state={
+	id=808
+	name="STATE_808"
+	resources={
+		steel=4.000
+	}
+
+	history={
+		owner = MON
+		victory_points = {
+			12612 3
+		}
+		add_core_of = MEN
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 1
+		}
+		add_core_of = MON
+	}
+
+	provinces={
+		7749 12612 4655 7752 1787 4856 1723 12686 10632 1853 4729 12669 12539
+	}
+	manpower=120653
+	buildings_max_level_factor=1.000
+	state_category=town
+}
