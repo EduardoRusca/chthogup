@@ -61,6 +61,15 @@ defined_text = {
 		trigger = {
 			tag = JAP
 			has_government = fascism
+			NOT = { has_country_flag = cht_supported_fukuda }
+		}
+		localization_key = JAP_HARU_TAMADA
+	}
+	text = {
+		trigger = {
+			tag = JAP
+			has_government = fascism
+			has_country_flag = cht_supported_fukuda
 		}
 		localization_key = JAP_IKUYO_FUKUDA
 	}
@@ -91,6 +100,15 @@ defined_text = {
 		trigger = {
 			tag = JAP
 			has_government = fascism
+			NOT = { has_country_flag = cht_supported_fukuda }
+		}
+		localization_key = GFX_Tamada
+	}
+	text = {
+		trigger = {
+			tag = JAP
+			has_government = fascism
+			has_country_flag = cht_supported_fukuda
 		}
 		localization_key = GFX_Fukuda
 	}
@@ -122,8 +140,17 @@ defined_text = {
         trigger = {
 			tag = JAP
 			has_government = fascism
+			NOT = { has_country_flag = cht_supported_fukuda }
 		}
         localization_key = "POLITICS_FUKUDA_DESC"
+	}
+	text = {
+        trigger = {
+			tag = JAP
+			has_government = fascism
+			has_country_flag = cht_supported_fukuda
+		}
+        localization_key = "POLITICS_TAMADA_DESC"
 	}
 	text = {
         trigger = {

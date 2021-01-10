@@ -2,7 +2,7 @@
 
 oob = "JAP_1936"
 
-set_stability = 0.2 #baseline, THE EMPRESS PROTECTS
+set_stability = 0.2 #baseline, THE EMPRESS PROTECTS #base
 set_war_support = 0.8
 
 set_research_slots = 4
@@ -531,17 +531,6 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Natsuko Hosomi" # Whorls
-	picture = "Hosomi.dds"
-	traits = { panzer_leader trait_reckless trickster cht_toseiha_symphatizer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
 	name = "Akemi Kubota"
 	picture = "Kubota.dds"
 	traits = { panzer_leader infantry_leader cht_toseiha_symphatizer }
@@ -569,6 +558,17 @@ create_corps_commander = {
 	traits = { panzer_leader trait_engineer cht_toseiha_symphatizer }
 	skill = 4
 	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Natsuko Hosomi" # Whorls
+	picture = "Hosomi.dds"
+	traits = { panzer_leader trait_reckless trickster cht_kodoha_symphatizer }
+	skill = 4
+	attack_skill = 4
 	defense_skill = 2
 	planning_skill = 2
 	logistics_skill = 3

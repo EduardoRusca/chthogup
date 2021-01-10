@@ -323,4 +323,24 @@ spriteTypes = {
 	name = "GFX_goal_range_focus"
 	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_range_focus.dds"			
 	}
+
+	SpriteType = {
+	name = "GFX_goal_industrial_question"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_industrial_question.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_final_chinese_push"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_final_chinese_push.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_final_russian_push"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_final_russian_push.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_final_southward_push"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_final_southward_push.dds"			
+	}
 }

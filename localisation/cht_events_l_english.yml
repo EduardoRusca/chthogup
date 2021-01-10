@@ -3,6 +3,30 @@
  ### REGULAR EVENTS ###
  ######################
 
+ #TOKYO SPEECH
+ cht2.13.t: "The [GetSecondTitle]'s Speech"
+ cht2.13.desc: "The [GetSecondTitle] goes to her pedestal to speak among the populace on radio and live among the students. Her speech reports as follows: \n\n'We are on our final stand... It should not have come to this, but it has proven too straining to go on... \n\nWe must incite the most painful of battles that will come. We shall fight in the streets, temples, factories, mountains, and shores... and that we will show them that we are not easily defeated. \n\nThe spirit of Chi-Ha-Tan stands high! Tokkan! Totsugeki! Nishi Heika Banzai!' \n\nWith that, the academy has rallied further in unity. Only time will tell if they ever achieve victory."
+ cht2.13.a: "It has come to this."
+
+ #INDUSTRIAL QUESTION
+ cht2.7.t: "The Industrial Question: 2nd Fate of the Zaibatsu"
+ cht2.7.desc: "With our efforts evermore expanding, the need for better technology and innovation is rising high. We must come up to review our 'Zaibatsus' in the case of their progress. \n\nWe have many choices, therefore we must choose wisely."
+ cht2.7.a: "Combine all their efforts in to one!"
+ INTERZAIBATSU_DEVELOPMENT: "§RThis will disband all other major industrial concern congolomerates!§!"
+ cht2.7.b: "Ikedatomo and their electronics!"
+ cht2.7.c: "Mayumitsu Terakosan and their synthetics!"
+ cht2.7.d: "Hosomisaki and their heavy equipment!"
+ cht2.8.t: "The Inustrial Question: Progress Report"
+ cht2.8.desc: "With the our inustry consolidated, our cliques have now reported on their progress. Depending on who we have sponsored, we will have different effects and results. \n\nThere will be another final report after this that will decide our industrial focus. But no worries, we can still have other sectors uner our wings."
+ cht2.8.a: "Excellent!"
+ cht2.8.b: "WHAT, NUKES?!"
+ cht2.8.c: "Amazing!"
+ cht2.8.d: "Bravo!"
+ sumitomo_nukes: "Nuclear Prowess"
+ cht2.9.t: "The Industrial Question: Final Report"
+ cht2.9.desc: "The reporting has now come to an end with the conglomerates' coordinate efforts coming up to this. We now have our indutrial focus determined. Congratulations!"
+ cht2.9.a: "It is done."
+
  #PRAVDA ULTIMATUM
  pvd.1.t: "Ultimatum of Surrender from Chi-Ha-Tan"
  pvd.1.desc: "A delegate has arrrived in to the capital and has brought about an offer of peace with concession measures of our land in the east. It'll be [SOV.GetLeader]'s choice to accept or decline this offer. Our academy's fate is at stake with this."

@@ -80,7 +80,10 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
+				stability_factor = 0.2
+				war_support_factor = 0.2
 				conscription = 0.025
+				non_core_manpower = -0.05
 			}
 		}
 
@@ -1397,6 +1400,18 @@ ideas = {
 			
 			allowed = {
 				original_tag = JAP
+				NOT = {
+					has_country_flag = cht_industrial_question_answered1
+				}
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = INDUSTRIAL_QUESTION
+					NOT = {
+						has_country_flag = cht_industrial_question_answered1
+					}
+				}
 			}
 			
 			research_bonus = {
@@ -1410,6 +1425,18 @@ ideas = {
 						
 			allowed = {
 				original_tag = JAP
+				NOT = {
+					has_country_flag = cht_industrial_question_answered1
+				}
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = INDUSTRIAL_QUESTION
+					NOT = {
+						has_country_flag = cht_industrial_question_answered1
+					}
+				}
 			}
 						
 			research_bonus = {
@@ -1425,6 +1452,18 @@ ideas = {
 			
 			allowed = {
 				original_tag = JAP
+				NOT = {
+					has_country_flag = cht_industrial_question_answered1
+				}
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = INDUSTRIAL_QUESTION
+					NOT = {
+						has_country_flag = cht_industrial_question_answered1
+					}
+				}
 			}
 						
 			research_bonus = {
@@ -1433,6 +1472,31 @@ ideas = {
 			}
 			
 			traits = { refinery_concern }
+		}
+
+		cht_interzaibatsu_development = {
+						
+			picture = jap_zaibatsu
+			
+			allowed = {
+				original_tag = JAP
+				has_country_flag = cht_industrial_question_answered1
+			}
+
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = INDUSTRIAL_QUESTION
+					has_country_flag = cht_industrial_question_answered1
+				}
+			}
+						
+			research_bonus = {
+				industry = 0.12
+				electronics = 0.12
+				synth_resources = 0.12
+			}
+			
+			traits = { conglomerate_cooperation }
 		}
 	}
 	

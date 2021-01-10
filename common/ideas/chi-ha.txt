@@ -140,6 +140,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.075
+				production_speed_arms_factory_factor = -0.05
 			}
 		}
 
@@ -159,6 +160,7 @@ ideas = {
 
 			modifier = {
 				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = -0.05
 			}
 		}
 
@@ -251,7 +253,7 @@ ideas = {
 				mobilization_laws_cost_factor = -0.25
 				trade_laws_cost_factor = -0.25
 				economy_cost_factor = -0.25
-				non_core_manpower = 0.05
+				non_core_manpower = 0.08
 				research_speed_factor = 0.02
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_arms_factory_factor = 0.05
@@ -563,6 +565,443 @@ ideas = {
 					air_attack = 0.05
 					build_cost_ic = -0.12 instant = yes
    				}
+			}
+		}
+
+		cht_the_zero_fighter = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = man_five_year_plan_air
+
+			modifier = {
+				war_support_factor = 0.05
+			}
+			
+			equipment_bonus = {
+				fighter_equipment  = {
+					air_range = 0.15
+					air_attack = 0.1
+					build_cost_ic = -0.15 instant = yes
+				}
+				cv_fighter_equipment = {
+					air_range = 0.15
+					air_attack = 0.1
+					build_cost_ic = -0.15 instant = yes
+   				}
+			}
+		}
+
+		cht_arms_modernization = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = MEX_politicised_army
+			
+			equipment_bonus = {
+				infantry_equipment  = {
+					reliability = 0.2
+					build_cost_ic = -0.15 instant = yes
+				}
+				support_equipment = {
+					reliability = 0.2
+					build_cost_ic = -0.15 instant = yes
+   				}
+			}
+		}
+
+		cht_hosomi_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.12
+				production_speed_arms_factory_factor = 0.1
+				local_resources_factor = 0.08
+				conversion_cost_civ_to_mil_factor = -0.4
+				conversion_cost_mil_to_civ_factor = -0.4
+				mobilization_speed = 0.25
+			}
+		}
+
+		cht_ikeda_industry = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu_control
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.4
+				conversion_cost_mil_to_civ_factor = -0.4
+				mobilization_speed = 0.25
+			}
+		}
+
+		cht_rural_expansion = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_build_infrastructure
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+			}
+		}
+
+		cht_buildout_the_countryside = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_central_management
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		cht_infrastructure = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = new_deal
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+			}
+		}
+
+		cht_national_defense_state = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = state_shintoism
+			
+			modifier = {
+				max_command_power = 100
+				dig_in_speed_factor = 0.75
+				max_dig_in_factor = 0.5
+			}
+		}
+
+		cht_warrior_spirit = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = imperial_glory_idea
+			
+			modifier = {
+				army_org_factor = -0.12
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+
+		cht_chinese_push = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_ichi_go
+			
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = SHX
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = XSM
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = YUN
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = GXC
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = SIK
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+		}
+
+		cht_southward_push = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = spa_crusade_against_democracy
+			
+			targeted_modifier = {
+				tag = INS
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = MAL
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = PHI
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = RAJ
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = AST
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+		}
+
+		cht_russian_push = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = ger_bulwark_against_bolshevism
+			
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = MON
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+
+			targeted_modifier = {
+				tag = TAN
+				attack_bonus_against = 0.75
+				defense_bonus_against = 0.75
+			}
+		}
+
+		cht_last_stand = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_militarism_showa
+			
+			modifier = {
+				surrender_limit = 1
+				max_surrender_limit_offset = 1
+			}
+		}
+
+		cht_extended_investment = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_zaibatsu
+			
+			modifier = {
+				consumer_goods_factor = 0.075
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		cht_kodoha_tactics = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = man_militarism
+			
+			modifier = {
+				winter_attrition_factor = -0.1
+				acclimatization_cold_climate_gain_factor = 0.15
+			}
+		}
+		
+		cht_hokushinron = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = man_militarism
+			
+			modifier = {
+				winter_attrition = -0.1
+				acclimatization_cold_climate_gain_factor = 0.3
+				supply_consumption_factor = -0.05
+				land_night_attack = 0.05
+				max_planning_factor = 0.05
+				org_loss_when_moving = -0.05
 			}
 		}
 	}

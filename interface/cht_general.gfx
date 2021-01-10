@@ -173,6 +173,14 @@ spriteTypes = {
 		name = "GFX_report_event_escalate_border_conflict"
 		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_escalate_border_conflict.dds"
 	}
+	spriteType = {
+		name = "GFX_report_event_chihatan_industry_question"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_chihatan_industry_question.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_tokyo_speech"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_tokyo_speech.dds"
+	}
 
 	spriteType = {
 		name = "GFX_news_event_haru_tamada_coup_news"

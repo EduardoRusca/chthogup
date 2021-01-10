@@ -51,3 +51,10 @@
  KURO_LICENSE_REJECTED: "Kuromorimine §Rrejecting§! the request"
  fighter_production: "Fighter Production"
  fighter_production_desc: "Our airforce is still lacking. We shall do more to make it better in terms of quality and quantity!"
+ #CUSTOM COST TRIGGERS
+ command_power_more_than24: "§H25§!£command_power"
+ command_power_more_than24_blocked: "§R25§!£command_power"
+ command_power_more_than24_tooltip: "It costs 25£command_power to select this."
+ command_power_more_than18: "§H18§!£command_power"
+ command_power_more_than18_blocked: "§R18§!£command_power"
+ command_power_more_than18_tooltip: "It costs 18£command_power to select this."

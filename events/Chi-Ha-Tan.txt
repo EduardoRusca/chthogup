@@ -377,6 +377,613 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = cht2.7
+	title = cht2.7.t
+	desc = cht2.7.desc
+	picture = GFX_report_event_chihatan_industry_question
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.7.a
+
+		add_political_power = -200
+
+		custom_effect_tooltip = INTERZAIBATSU_DEVELOPMENT
+
+		add_ideas = cht_interzaibatsu_development
+
+		hidden_effect = {
+			set_country_flag = cht_cht2.7.a
+			set_country_flag = cht_industrial_question_answered1
+			remove_ideas = kawasaki
+			remove_ideas = sumitomo
+			remove_ideas = JAP_idemitsu_kosan
+
+			country_event = {
+				id = cht2.8
+				days = 180
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	option = {
+		name = cht2.7.b
+
+		if = {
+			limit = {
+				has_idea = kawasaki
+			}
+			swap_ideas = {
+				remove_idea = kawasaki
+				add_idea = sumitomo
+			}
+		}
+		if = {
+			limit = {
+				has_idea = JAP_idemitsu_kosan
+			}
+			swap_ideas = {
+				remove_idea = JAP_idemitsu_kosan
+				add_idea = sumitomo
+			}
+		}
+		if = {
+			limit = {
+				has_idea = sumitomo
+			}
+			add_political_power = 100
+		}
+
+		add_tech_bonus = {
+			name = sumitomo
+			bonus = 1.0
+			uses = 1
+			category = electronics
+		}
+
+		hidden_effect = {
+			set_country_flag = cht_cht2.7.b
+			country_event = {
+				id = cht2.8
+				days = 180
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	option = {
+		name = cht2.7.c
+
+		if = {
+			limit = {
+				has_idea = sumitomo
+			}
+			swap_ideas = {
+				remove_idea = sumitomo
+				add_idea = JAP_idemitsu_kosan
+			}
+		}
+		if = {
+			limit = {
+				has_idea = kawasaki
+			}
+			swap_ideas = {
+				remove_idea = kawasaki
+				add_idea = JAP_idemitsu_kosan
+			}
+		}
+		if = {
+			limit = {
+				has_idea = JAP_idemitsu_kosan
+			}
+			add_political_power = 100
+		}
+
+		add_tech_bonus = {
+			name = JAP_idemitsu_kosan
+			bonus = 1.0
+			uses = 1
+			category = synth_resources	
+		}
+
+		hidden_effect = {
+			set_country_flag = cht_cht2.7.c
+			country_event = {
+				id = cht2.8
+				days = 180
+			}
+		}
+
+
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	option = {
+		name = cht2.7.d
+
+		if = {
+			limit = {
+				has_idea = sumitomo
+			}
+			swap_ideas = {
+				remove_idea = sumitomo
+				add_idea = kawasaki
+			}
+		}
+		if = {
+			limit = {
+				has_idea = JAP_idemitsu_kosan
+			}
+			swap_ideas = {
+				remove_idea = JAP_idemitsu_kosan
+				add_idea = kawasaki
+			}
+		}
+		if = {
+			limit = {
+				has_idea = kawasaki
+			}
+			add_political_power = 100
+		}
+
+		add_tech_bonus = {
+			name = kawasaki
+			category = industry
+			uses = 3
+			bonus = 1.0
+		}
+
+		hidden_effect = {
+			set_country_flag = cht_cht2.7.d
+			country_event = {
+				id = cht2.8
+				days = 180
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = cht2.8
+	title = cht2.8.t
+	desc = cht2.8.desc
+	picture = GFX_report_event_chihatan_industry_question
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.8.a
+
+		trigger = {
+			has_country_flag = cht_cht2.7.a
+		}
+
+		random_owned_controlled_state = {
+			limit = {
+				ROOT = { has_full_control_of_state = PREV }
+				is_core_of = ROOT
+				not = {
+					OR = {
+						state = 646
+						state = 645
+						state = 555
+					}
+				}					
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		random_owned_controlled_state = {
+			limit = {
+				ROOT = { has_full_control_of_state = PREV }
+				is_core_of = ROOT
+				not = {
+					OR = {
+						state = 646
+						state = 645
+						state = 555
+					}
+				}					
+				free_building_slots = {
+					building = dockyard
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		add_tech_bonus = {
+			name = interzaibatsu_development
+			bonus = 1.0
+			uses = 2
+			category = industry	
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = cht2.9
+				days = 180
+			}
+		}
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	option = {
+		name = cht2.8.b
+		
+		trigger = {
+			has_country_flag = cht_cht2.7.b
+		}
+
+		add_tech_bonus = {
+			name = sumitomo_nukes
+			bonus = 1.0
+			uses = 1
+			category = nuclear
+		}
+
+		add_tech_bonus = {
+			name = sumitomo_nukes
+			bonus = 1.0
+			uses = 1
+			category = nuclear
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = cht2.9
+				days = 180
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	option = {
+		name = cht2.8.c
+		
+		trigger = {
+			has_country_flag = cht_cht2.7.c
+		}
+
+		random_owned_controlled_state = {
+			limit = {
+				ROOT = { has_full_control_of_state = PREV }
+				is_core_of = ROOT
+				not = {
+					OR = {
+						state = 646
+						state = 645
+						state = 555
+					}
+				}					
+				free_building_slots = {
+					building = synthetic_refinery
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = synthetic_refinery
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		random_owned_controlled_state = {
+			limit = {
+				ROOT = { has_full_control_of_state = PREV }
+				is_core_of = ROOT
+				not = {
+					OR = {
+						state = 646
+						state = 645
+						state = 555
+					}
+				}					
+				free_building_slots = {
+					building = fuel_silo
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = fuel_silo
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		add_tech_bonus = {
+			name = JAP_idemitsu_kosan
+			bonus = 1.0
+			uses = 1
+			category = synth_resources	
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = cht2.9
+				days = 180
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	option = {
+		name = cht2.8.d
+		
+		trigger = {
+			has_country_flag = cht_cht2.7.d
+		}
+
+		random_owned_controlled_state = {
+			limit = {
+				ROOT = { has_full_control_of_state = PREV }
+				is_core_of = ROOT
+				not = {
+					OR = {
+						state = 646
+						state = 645
+						state = 555
+					}
+				}					
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		random_owned_controlled_state = {
+			limit = {
+				ROOT = { has_full_control_of_state = PREV }
+				is_core_of = ROOT
+				not = {
+					OR = {
+						state = 646
+						state = 645
+						state = 555
+					}
+				}					
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+
+		add_tech_bonus = {
+			name = interzaibatsu_development
+			bonus = 1.0
+			uses = 3
+			category = industry	
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = cht2.9
+				days = 180
+			}
+		}
+
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
+country_event = {
+	id = cht2.9
+	title = cht2.9.t
+	desc = cht2.9.desc
+	picture = GFX_report_event_chihatan_industry_question
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.9.a
+
+		if = {
+			limit = {
+				has_country_flag = cht_cht2.7.a
+				NOT = { 
+					OR = {
+						has_idea = cht_hosomi_industry 
+						has_idea = cht_ikeda_industry 
+					}
+				}
+			}
+			add_ideas = cht_extended_investment
+		}
+		if = {
+			limit = {
+				has_country_flag = cht_cht2.7.b
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					not = {
+						OR = {
+							state = 646
+							state = 645
+							state = 555
+						}
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 7
+				}
+				add_resource = {
+					type = chromium
+					amount = 6
+				}
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					not = {
+						OR = {
+							state = 646
+							state = 645
+							state = 555
+						}
+					}
+				}
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+				add_resource = {
+					type = chromium
+					amount = 7
+				}
+				add_resource = {
+					type = aluminium
+					amount = 9
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				producer = JAP
+				amount = 5834
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = cht_cht2.7.c
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					not = {
+						OR = {
+							state = 646
+							state = 645
+							state = 555
+						}
+					}
+				}
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					not = {
+						OR = {
+							state = 646
+							state = 645
+							state = 555
+						}
+					}
+				}
+				add_resource = {
+					type = oil
+					amount = 11
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = cht_cht2.7.d
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1 
+				producer = JAP
+				amount = 15078
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1 
+				producer = JAP
+				amount = 9365
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_2 
+				producer = JAP
+				amount = 11354
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_2
+				producer = JAP
+				amount = 6734
+			}
+		}
+
+		add_political_power = 120
+
+		ai_chance = {
+			base = 1
+		}
+	}
+}
+
 country_event = { # cht2.10-cht2.12 ARE NOT MADE BY ME. THEY ARE OF COURTESY OF THE UMC MODDING TEAM. WE WILL RESPECT THE FINAL CHOICE OF THE UMC MODDING TEAM IF EVER. 
 	id = cht2.10  # PLAY THEIR MOD PACKS, IT'S REALLY FUN!
 	title = cht2.10.t
@@ -619,5 +1226,23 @@ country_event = {
 			news_event = { id = cht_news.2 hours = 6 }
 			set_country_flag = second_wave
 		}
+	}
+}
+
+country_event = {
+	id = cht2.13
+	title = cht2.13.t
+	desc = cht2.13.desc
+	picture = GFX_report_event_tokyo_speech
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.13.a
+
+		add_stability = 0.25
+		add_war_support = 0.25
+
+		add_ideas = cht_last_stand
 	}
 }
