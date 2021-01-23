@@ -74,7 +74,7 @@ leader_traits = {
 	emperor_nishi = { ### Nishi Heika Banzai!
 		random = no
 
-		stability_factor = 0.6 #FOR THE TAKIYAKI
+		stability_factor = 0.5 #FOR THE TAKIYAKI
 
 		ai_will_do = {
 			factor = 1
@@ -95,12 +95,13 @@ leader_traits = {
 	radiant_commander = { ### Radiant Enlightenment
 		random = no
 
-		war_support_factor = 0.25
-		army_defence_factor = 0.15
-		army_attack_factor = 0.15
-		experience_gain_army_factor = 0.5
-		experience_gain_air_factor = 0.5
-		experience_gain_navy_factor = 0.5
+		war_support_factor = 0.15
+		stability_factor = -0.1
+		army_defence_factor = 0.1
+		army_attack_factor = 0.1
+		experience_gain_army_factor = 0.3
+		experience_gain_air_factor = 0.3
+		experience_gain_navy_factor = 0.3
 
 		ai_will_do = {
 			factor = 1
@@ -139,6 +140,7 @@ leader_traits = {
 	###IKUYO###
 	cht_reformer = { # Bayan o sarili, pumili ka!
 		sprite = 9
+		stability_factor = -0.025
 		army_defence_factor = 0.12
 		army_org_factor = 0.12
 		army_morale_factor = 0.08
@@ -151,8 +153,9 @@ leader_traits = {
 	###HARU###
 	cht_old_school = { # Hokushin-ron much?
 		sprite = 7
+		war_support_factor = 0.05
 		army_attack_factor = 0.1
-		experience_gain_army_factor = -0.1
+		experience_gain_army_factor = -0.15
 		political_power_factor = 0.1
 
 		ai_will_do = {
@@ -206,8 +209,8 @@ leader_traits = {
 	mystical_fanaticism = { # She may be insane
 		random = no
 		stability_factor = 0.4
-		war_support_factor = 0.2
-		army_attack_factor = 0.15
+		war_support_factor = 0.15
+		army_attack_factor = 0.12
 		army_defence_factor = 0.12
 		army_morale_factor = 0.08
 		ai_focus_aggressive_factor = 0.5
@@ -219,8 +222,8 @@ leader_traits = {
 
 	princess_of_terror = { # scary grill help
 		sprite = 13
-		resistance_damage_to_garrison = -0.25 
-		foreign_subversive_activites = -0.3
+		resistance_damage_to_garrison = -0.5 
+		foreign_subversive_activites = -0.4
 		non_core_manpower = 0.02
 		
 		ai_will_do = {

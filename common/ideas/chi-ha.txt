@@ -54,7 +54,7 @@ ideas = {
 			picture = chi_army_corruption3
 
 			modifier = {
-				stability_factor = -0.18
+				stability_factor = -0.2
 				production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = 0.05
 			}
@@ -75,8 +75,8 @@ ideas = {
 			picture = chi_army_corruption3
 
 			modifier = {
-				stability_factor = -0.09
-				war_support_factor = -0.12
+				stability_factor = -0.1
+				war_support_factor = -0.2
 				production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = 0.05
 			}
@@ -97,7 +97,7 @@ ideas = {
 			picture = chi_army_corruption3
 
 			modifier = {
-				stability_factor = -0.09
+				stability_factor = -0.1
 				production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = 0.05
 			}
@@ -1002,6 +1002,60 @@ ideas = {
 				land_night_attack = 0.05
 				max_planning_factor = 0.05
 				org_loss_when_moving = -0.05
+			}
+		}
+
+		cht_manchurian_project = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = man_militarism
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+
+		cht_the_ultimate_battleship = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = 0.1 instant = yes
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+			modifier = {
+				production_speed_dockyard_factor = 0.1
 			}
 		}
 	}

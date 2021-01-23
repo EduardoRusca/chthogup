@@ -3,6 +3,32 @@
  ### REGULAR EVENTS ###
  ######################
 
+ #MANCHURIAN PROJECT
+ cht2.14.t: "The Manchurian Project"
+ cht2.14.desc: "Ikeda has submitted a request report to start a 'Manchurian Project' to help kickstart the Manchurian industry. Ikeda has plans for our local industry but she has looked to Manchuria for now... or not. \n\nBut this comes at a catch, because Ikeda has provided this report strictly and has given reminders that there will be bad actions to come when we won't complete them on time."
+ cht2.14.a: "Let us see this development."
+ cht2.15.t: "Showa Steel Works"
+ cht2.15.desc: "Reports have come back to us. The next stage proceeds in the Manchruian Project."
+ cht2.15.a: "Affirmative"
+ cht2.16.t: "Manchurian Railways Expanded"
+ cht2.16.desc: "Reports have come back to us. The next stage proceeds in the Manchruian Project."
+ cht2.16.a: "Affirmative"
+ cht2.17.t: "Zaibatsu Expansion"
+ cht2.17.desc: "Reports have come back to us. The Zaibatsus have been given ground for development. The next stage proceeds in the Manchruian Project."
+ cht2.17.a: "Affirmative"
+ cht2.18.t: "Light Industry Development"
+ cht2.18.desc: "Reports have come back to us. The next stage proceeds in the Manchruian Project."
+ cht2.18.a: "Affirmative"
+ cht2.19.t: "Heavy Industry Development"
+ cht2.19.desc: "Reports have come back to us. The next stage proceeds in the Manchruian Project."
+ cht2.19.a: "Affirmative"
+ cht2.20.t: "Japanese Settlement"
+ cht2.20.desc: "Reports have come back to us. Our new students have moved in the new spaces for better development. The next stage proceeds in the Manchruian Project."
+ cht2.20.a: "Affirmative"
+ cht2.21.t: "Border Fortifications"
+ cht2.21.desc: "Reports have come back to us. We have finished our borders against [SOV.GetNameDef]. The next stage proceeds in the Manchruian Project."
+ cht2.21.a: "Affirmative"
+
  #TOKYO SPEECH
  cht2.13.t: "The [GetSecondTitle]'s Speech"
  cht2.13.desc: "The [GetSecondTitle] goes to her pedestal to speak among the populace on radio and live among the students. Her speech reports as follows: \n\n'We are on our final stand... It should not have come to this, but it has proven too straining to go on... \n\nWe must incite the most painful of battles that will come. We shall fight in the streets, temples, factories, mountains, and shores... and that we will show them that we are not easily defeated. \n\nThe spirit of Chi-Ha-Tan stands high! Tokkan! Totsugeki! Nishi Heika Banzai!' \n\nWith that, the academy has rallied further in unity. Only time will tell if they ever achieve victory."
@@ -144,7 +170,7 @@
  CHT_destroy_two_early_battleships: "Destroy two §HEarly Battleships§!"
 
  cht_news.2.t: "Attack on Takashi Harbor"
- cht_news.2.desc: "On November 7th, an attack had commenced on Pearl Harbor by the Chi-Ha-Tan Airforce and Navy. The attack was unprecedented as a bright sunny day of day-to-day life had just been passing around. Local constituents have taken in to account mysterious planes hovering over sea and right after an attack were baffled at the expense of such actions. \n\nAt least three condemning strike waves have been reported to happen. Only then hours after had a telegram from Chi-Ha-Tan of a statement of war been received at the desk of President Commander Kay."
+ cht_news.2.desc: "On November 7th, an attack had commenced on Takashi Harbor by the Chi-Ha-Tan Airforce and Navy. The attack was unprecedented as a bright sunny day of day-to-day life had just been passing around. Local constituents have taken in to account mysterious planes hovering over sea and right after an attack were baffled at the expense of such actions. \n\nAt least three condemning strike waves have been reported to happen. Only then hours after had a telegram from Chi-Ha-Tan of a statement of war been received at the desk of President Commander Kay."
  cht_news.2.a: "Mission Accomplished"
  cht_news.2.b: "They what?!"
  cht_news.2.c: "Cheers to the Awoken Tiger!"

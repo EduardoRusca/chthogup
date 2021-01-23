@@ -142,7 +142,7 @@ defined_text = {
 			has_government = fascism
 			NOT = { has_country_flag = cht_supported_fukuda }
 		}
-        localization_key = "POLITICS_FUKUDA_DESC"
+        localization_key = "POLITICS_TAMADA_DESC"
 	}
 	text = {
         trigger = {
@@ -150,7 +150,7 @@ defined_text = {
 			has_government = fascism
 			has_country_flag = cht_supported_fukuda
 		}
-        localization_key = "POLITICS_TAMADA_DESC"
+        localization_key = "POLITICS_FUKUDA_DESC"
 	}
 	text = {
         trigger = {

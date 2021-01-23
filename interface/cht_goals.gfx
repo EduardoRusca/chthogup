@@ -343,4 +343,14 @@ spriteTypes = {
 	name = "GFX_goal_final_southward_push"
 	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_final_southward_push.dds"			
 	}
+
+	SpriteType = {
+	name = "GFX_goal_hamada_ticket"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_hamada_ticket.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_hosomi_ticket"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_hosomi_ticket.dds"			
+	}
 }

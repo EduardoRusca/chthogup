@@ -87,3 +87,6 @@
  JAP_sign_tripartite_pact: "Sign Tripartite Pact"
  JAP_sign_tripartite_pact_bypass_tt: "Either [GER.GetName] or [ITA.GetName] does not have a fascist government or we are at war with one of them."
  JAP_sign_tripartite_pact_desc: "The task that lies before us may well prove a challenge for our abilities. We should reach out to other academoes with similar goals, so that we may engage in some measure of cooperation. We shall find our place under the sun with [GER.GetNameDef] and [ITA.GetNameDef]!"
+ JAP_army_expansion: "Army Expansion"
+ JAP_expand_the_showa_steel_works: "Expand the Nishi Steel Works"
+ JAP_expand_the_showa_steel_works_desc: "We must expand the Nishi Steel Works for better arms procurement and manufacturing for Manchukuo in years to come."

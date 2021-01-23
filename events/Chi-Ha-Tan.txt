@@ -16,13 +16,31 @@ country_event = {
 		
 		add_ideas = ikuyo_fukuda
 
-		set_technology = {
-			trench_warfare = 1
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			set_technology = {
+				trench_warfare = 1
+			}
+			else = {
+				add_tech_bonus = {
+					name = army_law.1
+					bonus = 2.0
+					uses = 3
+					category = cat_grand_battle_plan
+				}
+			}
 		}
 
 		hidden_effect = { 
-			set_technology = {
-				mass_assault = 0
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				set_technology = {
+					mass_assault = 0
+				}
 			}
 		}
 		
@@ -41,6 +59,13 @@ country_event = {
 		name = army_law.1.b
 		
 		add_ideas = haru_tamada
+
+		add_tech_bonus = {
+			name = army_law.1
+			bonus = 2.0
+			uses = 2
+			category = cat_grand_battle_plan
+		}
 
 		hidden_effect = { 
 			
@@ -1244,5 +1269,133 @@ country_event = {
 		add_war_support = 0.25
 
 		add_ideas = cht_last_stand
+	}
+}
+
+country_event = {
+	id = cht2.14
+	title = cht2.14.t
+	desc = cht2.14.desc
+	picture = GFX_report_event_manchurian_project
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.14.a
+
+		activate_mission = manchurian_project
+		activate_mission = JAP_expand_the_showa_steel_works
+		set_country_flag = cht_manchurian_project_start
+	}
+}
+
+country_event = {
+	id = cht2.15
+	title = cht2.15.t
+	desc = cht2.15.desc
+	picture = GFX_report_event_manchurian_project
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.15.a
+
+		activate_mission = JAP_expand_manchurian_railways
+		set_country_flag = cht_manchurian_project_1
+	}
+}
+
+country_event = {
+	id = cht2.16
+	title = cht2.16.t
+	desc = cht2.16.desc
+	picture = GFX_report_event_manchurian_project
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.16.a
+
+		activate_mission = JAP_zaibtasu_expansion
+		set_country_flag = cht_manchurian_project_2
+	}
+}
+
+country_event = {
+	id = cht2.17
+	title = cht2.17.t
+	desc = cht2.17.desc
+	picture = GFX_report_event_manchurian_project
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.17.a
+
+		activate_mission = JAP_light_industry_development
+		set_country_flag = cht_manchurian_project_3
+	}
+}
+
+country_event = {
+	id = cht2.18
+	title = cht2.18.t
+	desc = cht2.18.desc
+	picture = GFX_report_event_manchurian_project
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.18.a
+
+		activate_mission = JAP_heavy_industry_development
+		set_country_flag = cht_manchurian_project_4
+	}
+}
+
+country_event = {
+	id = cht2.19
+	title = cht2.19.t
+	desc = cht2.19.desc
+	picture = GFX_report_event_manchurian_project
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.19.a
+
+		activate_mission = JAP_japanese_settlement
+		set_country_flag = cht_manchurian_project_5
+	}
+}
+
+country_event = {
+	id = cht2.20
+	title = cht2.20.t
+	desc = cht2.20.desc
+	picture = GFX_report_event_manchurian_project
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.20.a
+
+		activate_mission = JAP_fortify_the_border
+		set_country_flag = cht_manchurian_project_6
+	}
+}
+
+country_event = {
+	id = cht2.21
+	title = cht2.21.t
+	desc = cht2.21.desc
+	picture = GFX_report_event_manchurian_project
+
+	is_triggered_only = yes
+	
+	option = {
+		name = cht2.21.a
+
+		add_political_power = 50
 	}
 }

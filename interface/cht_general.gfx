@@ -181,6 +181,10 @@ spriteTypes = {
 		name = "GFX_report_event_tokyo_speech"
 		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_tokyo_speech.dds"
 	}
+	spriteType = {
+		name = "GFX_report_event_manchurian_project"
+		texturefile = "gfx/event_pictures/Chi-Ha-Tan/GFX_report_event_manchurian_project.dds"
+	}
 
 	spriteType = {
 		name = "GFX_news_event_haru_tamada_coup_news"

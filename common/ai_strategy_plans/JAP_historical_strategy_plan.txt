@@ -72,9 +72,6 @@ JAP_historical_plan = {
 		JAP_claims_on_saunders
 		JAP_strategic_engineering
 		JAP_the_manchurian_project
-		JAP_zaibtasu_expansion
-		JAP_expand_manchurian_railways
-		JAP_expand_the_showa_steel_works
 		JAP_tactical_engineering
 		JAP_chihatan_ordinance
 		JAP_colonial_production_strategy
@@ -92,10 +89,6 @@ JAP_historical_plan = {
 		JAP_the_zero
 		JAP_unified_fighter_development
 		JAP_ikeda_section_3
-		JAP_heavy_industry_development
-		JAP_light_industry_development
-		JAP_japanese_settlement
-		JAP_the_baron_of_manchuria
 		JAP_national_exacavations
 		JAP_chihatan_expeditionary_army
 		#1940

@@ -71,7 +71,11 @@
  cht_kodoha_tactics: "Hokushin-ron Preparations"
  cht_kodoha_tactics_desc: "This war against [SOV.GetNameDef] will be a challenging task. We must prepare our forces as such."
  cht_hokushinron: "Sakusen Kurarabosutoku"
- cht_hokushinron_desc: "Operation Klaravostok is under swing! IKE! IKE! IKE!"
+ cht_hokushinron_desc: "§ROperation Klaravostok§! is under swing! IKE! IKE! IKE!"
+ cht_manchurian_project: "Manchurian Project Investments"
+ cht_manchurian_project_desc: "Manchurian projects have started and we have already diverted resources and factories as such."
+ cht_the_ultimate_battleship: "The Ultimate Battleship"
+ cht_the_ultimate_battleship_desc: "Nagura's super battleships: the §YYamato§! and the §YNishi§!"
  #ADVISORS
  ikuyo_fukuda: "Ikuyo Fukuda"
  ikuyo_fukuda_desc: "An advocate for the Nanshin-ron Doctrine. Ever since a meeting with the Ooarai sports detachment, a thought on reform on the tactics of the academy has come to question. Her efforts are starting to be recognized but will this be turned down back to the days of olden doctrine?"
