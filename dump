@@ -1,0 +1,118 @@
+if = {
+					limit = {
+						JAP = {
+							has_government = fascism
+						}
+					}
+					retire_country_leader = yes
+					create_country_leader = {
+						name = "Tomoyo Ikeda"
+						desc = "POLITICS_TOMOYO_IKEDA_DESC"
+						picture = "gfx/leaders/JAP/Ikeda.dds"
+						expire = "1965.1.1"
+						ideology = japanese_idealism3
+						traits = {
+
+						}
+					}
+				}
+				if = {
+					limit = {
+						JAP = {
+							OR = {
+								has_completed_focus = JAP_modern_shogunate
+								has_completed_focus = JAP_showa_restoration
+							}
+						}
+					}
+					retire_country_leader = yes
+					create_country_leader = {
+						name = "Tomoyo Ikeda"
+						desc = "POLITICS_TOMOYO_IKEDA_DESC"
+						picture = "gfx/leaders/JAP/Ikeda.dds"
+						expire = "1965.1.1"
+						ideology = japanese_idealism4
+						traits = {
+
+						}
+					}
+				}
+				create_field_marshal = {
+					name = "Tomoyo Ikeda"
+					picture = "Ikeda.dds"
+					traits = { panzer_leader trait_reckless }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 2
+				}
+				create_corps_commander = {
+					name = "Mayuka Teramoto"
+					picture = "Teramoto.dds"
+					traits = { panzer_leader }
+					skill = 4
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 3
+				}
+                if = {
+					limit = {
+						JAP = {
+							has_government = fascism
+						}
+					}
+					retire_country_leader = yes
+					create_country_leader = {
+						name = "Mayuka Teramoto"
+						desc = "POLITICS_MAYUKA_TERAMOTO_DESC"
+						picture = "gfx/leaders/JAP/Teramoto.dds"
+						expire = "1965.1.1"
+						ideology = japanese_idealism3
+						traits = {
+
+						}
+					}
+				}
+				if = {
+					limit = {
+						JAP = {
+							OR = {
+								has_completed_focus = JAP_modern_shogunate
+								has_completed_focus = JAP_showa_restoration
+							}
+						}
+					}
+					retire_country_leader = yes
+					create_country_leader = {
+						name = "Mayuka Teramoto"
+						desc = "POLITICS_MAYUKA_TERAMOTO_DESC"
+						picture = "gfx/leaders/JAP/Teramoto.dds"
+						expire = "1965.1.1"
+						ideology = japanese_idealism4
+						traits = {
+
+						}
+					}
+				}
+				create_field_marshal = {
+					name = "Mayuka Teramoto"
+					picture = "Teramoto.dds"
+					traits = { panzer_leader trait_reckless }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 2
+				}
+				create_corps_commander = {
+					name = "Tomoyo Ikeda"
+					picture = "Ikeda.dds"
+					traits = { panzer_leader }
+					skill = 4
+					attack_skill = 3
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 3
+				}

@@ -12,6 +12,8 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 
+	cht_tamada_trait
+
 	osaka_army_arsenal
 	kawasaki
 
@@ -556,6 +558,7 @@ create_corps_commander = {
 	name = "Mayuka Teramoto"
 	picture = "Teramoto.dds"
 	traits = { panzer_leader trait_engineer cht_toseiha_symphatizer }
+	id = 1700
 	skill = 4
 	attack_skill = 3
 	defense_skill = 2
@@ -566,7 +569,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Natsuko Hosomi" # Whorls
 	picture = "Hosomi.dds"
-	traits = { panzer_leader trait_reckless trickster cht_kodoha_symphatizer }
+	traits = { panzer_leader trait_reckless trickster cht_toseiha_symphatizer }
 	skill = 4
 	attack_skill = 4
 	defense_skill = 2
@@ -600,6 +603,7 @@ create_corps_commander = {
 	name = "Tomoyo Ikeda"
 	picture = "Ikeda.dds"
 	traits = { panzer_leader trait_reckless expert_improviser cht_kodoha_symphatizer }
+	id = 1701
 	skill = 4
 	attack_skill = 4
 	defense_skill = 3

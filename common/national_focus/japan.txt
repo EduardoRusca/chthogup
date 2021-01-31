@@ -1747,7 +1747,7 @@
 	focus = {
 		id = JAP_revise_the_bushido_code
 		icon = GFX_goal_revise_the_bushido_code
-		prerequisite = { focus = JAP_sign_tripartite_pact }
+		prerequisite = { focus = JAP_strike_south_doctrine }
 		prerequisite = { focus = JAP_intervene_in_china }
 		x = -1
 		y = 2

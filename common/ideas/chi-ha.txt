@@ -36,9 +36,265 @@ ideas = {
 				defense_bonus_against = 0.15
 			}
 		}
+		cht_fukuda_trait = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.10
+				fascism_acceptance = 75
+				ai_focus_defense_factor = 0.25
+				justify_war_goal_time = -0.10
+				political_advisor_cost_factor = -0.15
+				trade_laws_cost_factor = -0.15
+				mobilization_laws_cost_factor = -0.15
+				economy_cost_factor = -0.15
+				high_command_cost_factor = -0.15
+				air_chief_cost_factor = -0.15
+				army_chief_cost_factor = -0.15
+				navy_chief_cost_factor = -0.15
+			}
+		}
+		cht_tamada_trait = {
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				neutrality_acceptance = 75
+				ai_focus_aggressive_factor = 0.5
+				justify_war_goal_time = -0.25
+				army_morale_factor = 0.12
+				drift_defence_factor = 0.75
+				foreign_subversive_activites = -0.75
+				political_advisor_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				high_command_cost_factor = 0.25
+				air_chief_cost_factor = 0.25
+				army_chief_cost_factor = 0.25
+				navy_chief_cost_factor = 0.25
+			}
+		}
 	}
 
 	country = {
+		###MANCHUKUO
+		MAN_expand_the_textile_industry = {
+			allowed = {
+				original_tag = MAN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_goods_red_bonus
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.15
+			}
+		}
+
+		MAN_hoankyoku = {
+			allowed = {
+				original_tag = MAN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = received_attache
+
+			modifier = {
+				foreign_subversive_activites = -0.5
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+			}
+		}
+
+		MAN_expand_the_imperial_guards = {
+			allowed = {
+				original_tag = MAN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = man_militarism
+
+			modifier = {
+				foreign_subversive_activites = -0.5
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
+			}
+		}
+
+		###MENGKUKUO
+		cht_agrarian_expansion = {
+			allowed = {
+				original_tag = MEN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_all_in
+
+			modifier = {
+				consumer_goods_factor = -0.1
+				weekly_manpower = 1500
+			}
+		}
+
+		cht_militia_training = {
+			allowed = {
+				original_tag = MEN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_volunteer_defence_corps
+
+			modifier = {
+				training_time_army_factor = -0.15
+			}
+		}
+
+		cht_local_development = {
+			allowed = {
+				original_tag = MEN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+
+		cht_mobilization = {
+			allowed = {
+				original_tag = MEN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			modifier = {
+				mobilization_speed = 0.20
+				conscription_factor = 0.1
+			}
+		}
+
+		cht_aerial_military = {
+			allowed = {
+				original_tag = MEN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_air_bonus
+
+			equipment_bonus = {
+				fighter_equipment  = {
+					air_range = 0.1
+					air_agility = 0.05
+					build_cost_ic = -0.1 instant = yes
+				}
+				CAS_equipment = {
+					air_range = 0.1
+					air_agility = 0.05
+					build_cost_ic = -0.1 instant = yes
+   				}
+			}
+		}
+
+		cht_continental_military = {
+			allowed = {
+				original_tag = MEN
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_artillery_regiments
+
+			equipment_bonus = {
+				infantry_equipment  = {
+					reliability = 0.1
+					build_cost_ic = -0.1 instant = yes
+				}
+				artillery_equipment = {
+					reliability = 0.1
+					build_cost_ic = -0.1 instant = yes
+   				}
+			}
+		}
+
+		###JAPAN
 		cht_extremists = {
 			allowed = {
 				original_tag = JAP
@@ -55,6 +311,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.2
+				political_power_factor = -0.3
 				production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = 0.05
 			}
@@ -77,6 +334,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.2
+				political_power_factor = -0.15
 				production_speed_industrial_complex_factor = -0.05
 				production_speed_arms_factory_factor = 0.05
 			}
@@ -1198,6 +1456,27 @@ ideas = {
 			}
 
 			traits = { war_industrialist }
+
+			ai_will_do = {
+				factor = 3
+			}
+		}
+
+		tomoyo_ikeda_p_man = {
+			picture = tomoyo_ikeda
+
+			allowed = {
+				original_tag = MAN
+			}
+
+			available = {
+				if = {
+					limit = { has_dlc = "Waking the Tiger" }
+					has_completed_focus = MAN_invite_japanese_investors
+				}
+			}
+			
+			traits = { captain_of_industry war_industrialist }
 
 			ai_will_do = {
 				factor = 3

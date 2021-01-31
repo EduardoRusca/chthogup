@@ -353,4 +353,29 @@ spriteTypes = {
 	name = "GFX_goal_hosomi_ticket"
 	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_hosomi_ticket.dds"			
 	}
+
+	SpriteType = {
+	name = "GFX_goal_manchurian_visit"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_manchurian_visit.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_reminisce_the_past"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_reminisce_the_past.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_gateway_to_china"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_gateway_to_china.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_hamasuda_foundation"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_hamasuda_foundation.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_goal_mayumitsu_terakosan_foundation"
+	texturefile = "gfx/interface/goals/Chi-Ha-Tan/GFX_goal_mayumitsu_terakosan_foundation.dds"			
+	}
 }

@@ -38,6 +38,7 @@ defined_text = {
 			OR = {
 				has_government = fascism
 				has_government = neutrality
+				has_country_flag = cht_tamada_resign
 			}
 			NOT = {
 				has_completed_focus = JAP_modern_shogunate
@@ -70,6 +71,7 @@ defined_text = {
 			tag = JAP
 			has_government = fascism
 			has_country_flag = cht_supported_fukuda
+			has_country_flag = cht_tamada_resign
 		}
 		localization_key = JAP_IKUYO_FUKUDA
 	}
@@ -109,6 +111,7 @@ defined_text = {
 			tag = JAP
 			has_government = fascism
 			has_country_flag = cht_supported_fukuda
+			has_country_flag = cht_tamada_resign
 		}
 		localization_key = GFX_Fukuda
 	}
@@ -149,6 +152,7 @@ defined_text = {
 			tag = JAP
 			has_government = fascism
 			has_country_flag = cht_supported_fukuda
+			has_country_flag = cht_tamada_resign
 		}
         localization_key = "POLITICS_FUKUDA_DESC"
 	}

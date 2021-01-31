@@ -1,7 +1,32 @@
 ﻿l_english:
+ 
+ ####################
+ ### SUPER EVENTS ###
+ ####################
+ BE_SINO_JAPANESE_T: "2nd Sino-Chi-Ha-Tan War"
+ BE_SINO_JAPANESE_A: "A new Contender has Risen"
+ BE_SINO_JAPANESE_D: "'We shall show that we, Chi-ha-tan, are strong! Tokkan! Totsugeki! \n\n Nishi Heika Banzai!' \n\n-Haru Tamada"
+ 
  ######################
  ### REGULAR EVENTS ###
  ######################
+
+ #STATE VISIT
+ cht2.23.t: "Teramoto visits [MAN.GetName]"
+ cht2.23.desc: "Mayuka Teramoto has come for a visit to discuss matters on the future of Manchukuo. Some say that she is a an arbiter between Nishi and Ikeda, some say she is a pawn of Nishi, and some say she is irrelevant. \n\nThe issue on the table is on for Ikeda to be swayed to stay with Chi-Ha-Tan. \n\nWhat course shall we take?"
+ cht2.23.a: "We are stonger together."
+ cht2.23.b: "What business does Teramoto have with us?"
+ cht2.24.t: "Ikeda accepts"
+ cht2.24.desc: ""
+ cht2.24.a: "She still remembers..."
+ cht2.25.t: "Ikeda refuses"
+ cht2.25.desc: ""
+ cht2.25.a: "Has she forgotten???"
+
+ #TAMADA RESIGNS
+ cht2.22.t: "Tamada Resigns as [GetSecondTitle]"
+ cht2.22.desc: "On October 17, [GetSecondTitle] Tamada has confirmed her resignation as Prime Minister of the academy citing her findings on the plan to attack Takashi Harbor. Her final message reads as follows: \n\n'It is of an utmost duty to have served the academy. But now is the time to realize that either I or someone else was wrong all along. History will see things and dictate them soon enough. \n\nMay [GetFirstTitle] Nishi and everyone else continue what they see fit for the academy for I shall now serve under it in proper manner and discourse. \n\nChi-Ha-Tan Heika Banzai!'"
+ cht2.22.a: "Oh what History brings, no?"
 
  #MANCHURIAN PROJECT
  cht2.14.t: "The Manchurian Project"

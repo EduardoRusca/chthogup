@@ -23,14 +23,17 @@ news_event = {
 				TAG = CHI
 			}
 		}
+		set_country_flag = cht_sino_japanese_war
 	}
 	option = {
 		name = news.1.b
 		trigger = { TAG = JAP }
+		set_country_flag = cht_sino_japanese_war
 	}
 	option = {
 		name = news.1.c
 		trigger = { TAG = CHI }
+		set_country_flag = cht_sino_japanese_war
 	}
 }
 
